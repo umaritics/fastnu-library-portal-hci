@@ -212,13 +212,15 @@ This repository tracks the project as it transitions from research and definitio
 .
 ├── .gitignore                                                               # Clean ignore rules for MS Office & OS artifacts
 ├── README.md                                                                # Master project documentation & lifecycle overview
-├── D0_Team_Charter_Problem_Space_Stakeholder_Map.docx                      # D0: Governance charter, initial scope & stakeholder map
-├── G_23I-0782_MSM_Technologies.docx                                       # D0 Submission document (Muhammad Umar - 23I-0782)
-├── G_23I-0782_MSM_Technologies.pdf                                        # D0 Official PDF deliverable
-├── D1A_Research_Questions_Materials_Protocol (1).pdf                       # D1A: Ethical screener, consent script & think-aloud protocol
-├── G10-msmTechnologies_D1B.docx                                            # D1B: Anonymized fieldwork logs (P01-P10) & reflection
-├── D2_Synthesis_Report_G10.docx                                            # D2: Define stage synthesis report & requirements baseline
-└── D2 Synthesis Report, Problem Statement and Requirements (G10, 17-note wall).docx # D2: Rebuilt version based on 17-note physical affinity wall
+└── docs/                                                                    # Project deliverables & research documentation
+    ├── D0_Team_Charter_Problem_Space_Stakeholder_Map.docx                  # D0: Governance charter, initial scope & stakeholder map
+    ├── G_23I-0782_MSM_Technologies.docx                                   # D0: Submission document (Muhammad Umar - 23I-0782)
+    ├── G_23I-0782_MSM_Technologies.pdf                                    # D0: Official PDF deliverable
+    ├── D1A_Research_Questions_Materials_Protocol (1).pdf                   # D1A: Ethical screener, consent script & think-aloud protocol
+    ├── G10-msmTechnologies_D1B.docx                                        # D1B: Anonymized fieldwork logs (P01-P10) & reflection
+    ├── D2_Synthesis_Report_G10.docx                                        # D2: Define stage synthesis report & requirements baseline
+    ├── D2 Synthesis Report, Problem Statement and Requirements (G10, 17-note wall).docx # D2: Rebuilt version based on 17-note physical affinity wall
+    └── i230782-MuhammadUmar-A0.md                                         # Reference report / course deliverable
 ```
 
 ---
