@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>G10 — Room booking UI demo (no extension)</title>
+    <link rel="stylesheet" href="../extension/content/overlay/overlay.css" />
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body class="g10-demo">
+    <header class="g10-demo-toolbar" role="banner">
+      <span class="g10-demo-badge">UI DEMO</span>
+      <span>Refresh page after edits — no extension reload</span>
+      <label>
+        Scenario
+        <select id="g10-scenario" aria-label="Mock scenario">
+          <option value="default">Mixed availability</option>
+          <option value="r2_all_taken">R2 — all taken</option>
+          <option value="r2_one_free">R2 — one room free</option>
+          <option value="r2_several_free">R2 — several free</option>
+          <option value="empty">Empty list</option>
+          <option value="slow">Slow load</option>
+          <option value="submit_error">Submit error</option>
+        </select>
+      </label>
+      <button type="button" id="g10-open-booking">Open booking</button>
+      <button type="button" id="g10-reload">Reload data</button>
+      <button type="button" id="g10-width-320">Toggle 320px</button>
+    </header>
+
+    <div class="g10-demo-frame">
+      <div class="g10-fake-portal" aria-hidden="true">
+        <div class="g10-fake-block"></div>
+        <h2>My Account / Booking / Room (legacy portal)</h2>
+        <div class="g10-fake-block short"></div>
+      </div>
+
+      <div class="g10-root">
+        <div
+          class="g10-panel"
+          id="g10-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="g10-title"
+        >
+          <header class="g10-header">
+            <h1 id="g10-title">Book a study room <span style="font-size: 12px; opacity: 0.85">· demo</span></h1>
+            <button type="button" class="g10-btn-icon" id="g10-close" aria-label="Close booking panel">×</button>
+          </header>
+          <div class="g10-tabs" role="tablist">
+            <button type="button" class="g10-tab" role="tab" data-day="0" aria-selected="true">Today</button>
+            <button type="button" class="g10-tab" role="tab" data-day="1" aria-selected="false">Tomorrow</button>
+          </div>
+          <div class="g10-body">
+            <div id="g10-live" class="g10-status" aria-live="polite">Loading rooms…</div>
+            <div id="g10-rooms"></div>
+          </div>
+          <footer class="g10-footer">
+            <div class="g10-summary" id="g10-summary">Choose a free time to continue.</div>
+            <button type="button" class="g10-btn-primary" id="g10-confirm" disabled>Confirm booking</button>
+          </footer>
+        </div>
+
+        <div class="g10-pass-screen" id="g10-pass" hidden>
+          <h1 style="font-size: 1.125rem; margin-top: 0">Booking pass</h1>
+          <div id="g10-pass-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="mock-data.js"></script>
+    <script src="demo-app.js"></script>
+  </body>
+</html>
