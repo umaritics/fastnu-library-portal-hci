@@ -26,3 +26,7 @@ $RECYCLE.BIN/
 __pycache__/
 *.pyc
 *.pyo
+
+# Local archives (do not commit)
+extension.zip
+*.zip
