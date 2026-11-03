@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "FAST Library — HCI Redesign (G10 Prototype)",
+  "version": "1.0.12",
+  "description": "In-place HCI redesign of the FAST-NU Insignia library portal (header, home layout, room booking).",
+  "permissions": ["storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://nu.insigniails.com/*"],
+  "action": {
+    "default_title": "Room booking helper"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://nu.insigniails.com/*"],
+      "js": [
+        "content/config.js",
+        "content/bridge/util.js",
+        "content/shell/nav-model.js",
+        "content/shell/nav-dropdown.js",
+        "content/shell/header.js",
+        "content/shell/home-layout.js",
+        "content/shell/login-shell.js",
+        "content/shell/ask-librarian.js",
+        "content/bootstrap.js"
+      ],
+      "css": ["content/shell/portal-redesign.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://nu.insigniails.com/Library/*"],
+      "js": [
+        "content/bridge/page-bridge.js",
+        "content/bridge/kendo-portal.js",
+        "content/bridge/kendo-date.js",
+        "content/bridge/kendo-grid.js",
+        "content/bridge/kendo-room.js",
+        "content/bridge/kendo-duration.js",
+        "content/bridge/submit.js",
+        "content/parsers/availability.js",
+        "content/overlay/app.js",
+        "content/shell/room-booking-shell.js",
+        "content/booking-bootstrap.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/bridge/page-world.js",
+        "content/overlay/overlay.css",
+        "content/shell/portal-redesign.css",
+        "content/shell/room-booking.css"
+      ],
+      "matches": ["https://nu.insigniails.com/*"]
+    }
+  ]
+}

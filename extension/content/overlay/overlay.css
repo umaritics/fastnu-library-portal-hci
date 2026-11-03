@@ -1,0 +1,250 @@
+:host, .g10-root {
+  --g10-primary: #1e3a5f;
+  --g10-success: #0d7a3e;
+  --g10-error: #b42318;
+  --g10-surface: #ffffff;
+  --g10-muted: #5c6b7a;
+  --g10-border: #d8dee6;
+  --g10-radius: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  color: #1a1a1a;
+  box-sizing: border-box;
+}
+
+.g10-root * {
+  box-sizing: border-box;
+}
+
+.g10-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  background: var(--g10-surface);
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.35);
+}
+
+.g10-panel[hidden] {
+  display: none !important;
+}
+
+.g10-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--g10-primary);
+  color: #fff;
+}
+
+.g10-header h1 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.g10-btn-icon {
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.g10-btn-icon:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.g10-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px 0;
+}
+
+.g10-tab {
+  flex: 1;
+  min-height: 44px;
+  border: 1px solid var(--g10-border);
+  background: #f4f6f8;
+  border-radius: var(--g10-radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.g10-tab[aria-selected="true"] {
+  background: var(--g10-primary);
+  color: #fff;
+  border-color: var(--g10-primary);
+}
+
+.g10-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px 100px;
+}
+
+.g10-status {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f0f4f8;
+  color: var(--g10-muted);
+  margin-bottom: 12px;
+}
+
+.g10-status[data-tone="error"] {
+  background: #fdecea;
+  color: var(--g10-error);
+}
+
+.g10-room {
+  border: 1px solid var(--g10-border);
+  border-radius: var(--g10-radius);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.g10-room h2 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.g10-room-meta {
+  font-size: 0.875rem;
+  color: var(--g10-muted);
+  margin-bottom: 8px;
+}
+
+.g10-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.g10-chip {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--g10-success);
+  background: #e8f5ec;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.g10-chip[aria-pressed="true"] {
+  background: var(--g10-success);
+  color: #fff;
+}
+
+.g10-chip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--g10-border);
+  background: #eee;
+}
+
+.g10-taken-label {
+  font-size: 0.875rem;
+  color: var(--g10-muted);
+  font-style: italic;
+}
+
+.g10-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 12px 16px 16px;
+  background: linear-gradient(transparent, #fff 20%);
+  border-top: 1px solid var(--g10-border);
+}
+
+.g10-summary {
+  font-size: 0.9375rem;
+  margin-bottom: 8px;
+  min-height: 2.5em;
+}
+
+.g10-btn-primary {
+  width: 100%;
+  min-height: 48px;
+  border: none;
+  border-radius: var(--g10-radius);
+  background: var(--g10-primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.g10-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.g10-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483645;
+  min-height: 48px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--g10-primary);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.g10-home-cta {
+  display: block;
+  width: calc(100% - 32px);
+  max-width: 420px;
+  margin: 16px auto;
+  min-height: 56px;
+  border: 2px solid var(--g10-primary);
+  border-radius: var(--g10-radius);
+  background: #e8eef5;
+  color: var(--g10-primary);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.g10-skeleton {
+  height: 72px;
+  border-radius: var(--g10-radius);
+  background: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+  background-size: 200% 100%;
+  animation: g10-shimmer 1.2s infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes g10-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.g10-native-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}

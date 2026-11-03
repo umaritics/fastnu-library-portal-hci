@@ -1,0 +1,1110 @@
+/* G10 in-place portal redesign — no overlay dialog */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --g10-font: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --g10-blue: #0d4a7a;
+  --g10-blue-border: #1a6dad;
+  --g10-blue-soft: #e8f2fa;
+  --g10-text: #1a2b3c;
+  --g10-muted: #5c6b7a;
+  --g10-card-border: #d4e0ed;
+  --g10-radius: 12px;
+  --g10-radius-pill: 9999px;
+  --g10-page-gutter: 16px;
+}
+
+html.g10-redesign,
+html.g10-redesign body,
+html.g10-redesign #pageMainContent,
+html.g10-redesign #pageMainContent button,
+html.g10-redesign #pageMainContent input,
+html.g10-redesign #pageMainContent select,
+html.g10-redesign #pageMainContent textarea {
+  font-family: var(--g10-font) !important;
+}
+
+html.g10-redesign,
+html.g10-redesign body {
+  height: 100%;
+  margin: 0;
+}
+
+html.g10-redesign body {
+  overflow: hidden;
+  color: var(--g10-text);
+}
+
+html.g10-redesign #pageMainContent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html.g10-redesign #header.g10-unified-header {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* —— Unified header —— */
+html.g10-redesign #header.g10-unified-header,
+html.g10-redesign #header.g10-unified-header section {
+  flex-shrink: 0;
+  background: #fff !important;
+  background-image: none !important;
+  border-bottom: 1px solid var(--g10-card-border);
+}
+
+html.g10-redesign #header section {
+  display: none !important;
+}
+
+html.g10-redesign #divPageHeaderContent {
+  position: relative !important;
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px;
+  padding: 6px var(--g10-page-gutter) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  min-height: 52px;
+  max-height: 58px;
+  box-sizing: border-box !important;
+}
+
+html.g10-redesign #divPageHeaderContent > div:first-child img {
+  max-height: 44px;
+  width: auto;
+  display: block;
+}
+
+html.g10-redesign .g10-header-nav-slot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: max-content !important;
+  max-width: calc(100% - 280px);
+  pointer-events: none;
+}
+
+html.g10-redesign .g10-nav-bubble {
+  display: contents !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+html.g10-redesign .g10-header-nav-slot .menu {
+  float: none !important;
+  background: transparent !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+html.g10-redesign #navMenu {
+  display: inline-flex !important;
+  flex-flow: row wrap;
+  align-items: center !important;
+  align-content: center !important;
+  justify-content: center !important;
+  gap: 14px;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  height: auto !important;
+  float: none !important;
+}
+
+html.g10-redesign #navMenu > li {
+  position: relative !important;
+  background: transparent !important;
+  float: none !important;
+  display: flex !important;
+  align-items: center !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  clear: none !important;
+}
+
+html.g10-redesign #divPageHeaderContent > div:first-child {
+  flex: 0 0 auto;
+  z-index: 2;
+}
+
+html.g10-redesign #navMenu > li > a .g10-dd-icon,
+html.g10-redesign #navMenu > li > a .g10-dd-label {
+  display: none !important;
+}
+
+html.g10-redesign .g10-header-nav-slot .menu,
+html.g10-redesign .g10-nav-bubble,
+html.g10-redesign #navMenu {
+  pointer-events: auto;
+}
+
+html.g10-redesign .g10-header-tools {
+  flex: 0 0 auto;
+  margin-left: auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+html.g10-redesign .g10-header-tools .flexlayout {
+  border-left: none !important;
+  min-height: auto !important;
+  padding: 0 !important;
+}
+
+html.g10-redesign #navMenu > li > a,
+html.g10-redesign #navMenu > li > a.base,
+html.g10-redesign #navMenu > li > a[class*="-normal"],
+html.g10-redesign #navMenu > li > a[class*="-hover"] {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px !important;
+  height: auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  padding: 4px 12px !important;
+  border-radius: var(--g10-radius-pill) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  line-height: 1.15 !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
+  color: var(--g10-blue) !important;
+  background: transparent !important;
+  background-image: none !important;
+  background-size: 0 !important;
+  box-shadow: none !important;
+  white-space: nowrap;
+  overflow: visible !important;
+  float: none !important;
+  position: relative !important;
+}
+
+html.g10-redesign #navMenu > li > a::before,
+html.g10-redesign #navMenu > li > a::after {
+  content: none !important;
+  display: none !important;
+}
+
+html.g10-redesign #navMenu > li > a:hover,
+html.g10-redesign #navMenu > li > a.base-hover,
+html.g10-redesign #navMenu > li > a:focus {
+  background: var(--g10-blue-soft) !important;
+  color: var(--g10-blue) !important;
+}
+
+html.g10-redesign #navMenu > li > ul {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  width: max-content;
+  min-width: 280px;
+  max-width: min(480px, calc(100vw - 24px));
+  padding: 12px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  background: #fff !important;
+  background-image: none !important;
+  border: 1px solid var(--g10-card-border) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 40px rgba(15, 35, 60, 0.14) !important;
+  font-family: var(--g10-font) !important;
+  box-sizing: border-box;
+  overflow: visible !important;
+}
+
+html.g10-redesign #navMenu > li:hover > ul,
+html.g10-redesign #navMenu > li:focus-within > ul {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  gap: 4px;
+  align-content: start;
+}
+
+html.g10-redesign #navMenu li ul li,
+html.g10-redesign #navMenu li ul li.g10-dd-heading-li {
+  float: none !important;
+  width: 100% !important;
+  background: transparent !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  clear: both !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+html.g10-redesign #navMenu li ul ul {
+  display: none !important;
+}
+
+html.g10-redesign #navMenu li ul a.g10-dd-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  min-height: 42px !important;
+  height: auto !important;
+  padding: 6px 8px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
+  color: var(--g10-text) !important;
+  background: #fff !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  white-space: normal !important;
+  line-height: 1.25 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html.g10-redesign #navMenu li ul a:not(.g10-dd-link):not(.g10-dd-section-label) {
+  display: flex !important;
+  align-items: center !important;
+  padding: 6px 8px !important;
+  background-image: none !important;
+  color: var(--g10-text) !important;
+}
+
+html.g10-redesign #navMenu li ul a:hover,
+html.g10-redesign #navMenu li ul a:focus {
+  background: #f3f7fc !important;
+  color: var(--g10-blue) !important;
+}
+
+html.g10-redesign .g10-dd-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+}
+
+html.g10-redesign .g10-dd-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html.g10-redesign #navMenu li ul li.g10-dd-heading-li {
+  grid-column: 1 / -1;
+}
+
+html.g10-redesign #navMenu li ul li.liTriangle {
+  display: none !important;
+}
+
+html.g10-redesign #navMenu li ul li,
+html.g10-redesign #navMenu li ul a {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+html.g10-redesign #navMenu li ul .base-border,
+html.g10-redesign #navMenu li ul hr,
+html.g10-redesign #navMenu li ul .flexlayout.base-border {
+  display: none !important;
+}
+
+html.g10-redesign #navMenu li ul a.g10-dd-section-label {
+  display: block !important;
+  pointer-events: none;
+  font-size: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--g10-muted) !important;
+  background: transparent !important;
+  min-height: auto !important;
+  padding: 10px 8px 4px !important;
+  margin-top: 2px;
+  border: none !important;
+  border-top: none !important;
+}
+
+html.g10-redesign #navMenu li ul li.g10-dd-heading-li:first-child a.g10-dd-section-label {
+  margin-top: 0;
+  padding-top: 2px !important;
+}
+
+/* —— Home shell —— */
+html.g10-redesign #pageMainContent > #body,
+html.g10-redesign #pageMainContent #body.g10-home-shell {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+}
+
+html.g10-redesign #body.g10-home-shell {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--g10-page-gutter) !important;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+html.g10-redesign #body.g10-home-shell > .main-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+html.g10-redesign #body.g10-home-shell > #searchform {
+  display: none;
+}
+
+/* Hide legacy home widgets/scripts wrapper; keep moved panels in .g10-home-root */
+html.g10-redesign.g10-home-page #body > .main-content > :not(.g10-home-root) {
+  display: none !important;
+}
+
+html.g10-redesign.g10-home-page .g10-home-root {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html.g10-redesign.g10-home-page .waterfall-grid,
+html.g10-redesign.g10-home-page #body > .grid-item {
+  display: none !important;
+}
+
+html.g10-redesign .g10-home-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+html.g10-redesign .g10-insights-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+html.g10-redesign .g10-insight-card,
+html.g10-redesign .g10-insight-card *,
+html.g10-redesign .g10-insight-card .panel-heading,
+html.g10-redesign .g10-insight-card .panel-body {
+  font-family: var(--g10-font) !important;
+}
+
+html.g10-redesign .g10-insight-card .panel-heading,
+html.g10-redesign .g10-insight-card .panel-title {
+  background: var(--g10-blue-soft) !important;
+  background-image: none !important;
+  color: var(--g10-blue) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  border-bottom: 1px solid var(--g10-card-border) !important;
+}
+
+html.g10-redesign .g10-insight-card .panel-body {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: var(--g10-text) !important;
+  padding: 12px 14px 12px 18px !important;
+}
+
+html.g10-redesign .g10-insight-card .panel-heading,
+html.g10-redesign .g10-insight-card .panel-title {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+html.g10-redesign .g10-insight-card .panel {
+  margin: 0;
+  height: 100%;
+}
+
+html.g10-redesign .g10-main-row {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+  gap: 12px;
+  flex: 1 1 auto;
+  min-height: 240px;
+  overflow: hidden;
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+html.g10-redesign .g10-actions-pane,
+html.g10-redesign .g10-books-pane {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--g10-card-border);
+  border-radius: var(--g10-radius);
+  box-sizing: border-box;
+}
+
+html.g10-redesign .g10-pane-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+html.g10-redesign .g10-books-pane > .g10-search-block {
+  flex: 0 0 auto;
+}
+
+html.g10-redesign .g10-actions-pane {
+  z-index: 2;
+}
+
+html.g10-redesign .g10-books-pane {
+  z-index: 1;
+}
+
+html.g10-redesign .g10-actions-inner {
+  padding: 16px;
+}
+
+html.g10-redesign .g10-pane-title {
+  margin: 0 0 12px;
+  font-size: 1.125rem;
+  color: #1e3a5f;
+}
+
+html.g10-redesign .g10-prominent-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+html.g10-redesign .g10-prominent-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 10px 12px;
+  border-radius: var(--g10-radius);
+  background: var(--g10-blue-soft);
+  border: 2px solid var(--g10-blue-border);
+  color: var(--g10-blue);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+html.g10-redesign .g10-prominent-card:hover {
+  background: #d4e0ed;
+}
+
+html.g10-redesign .g10-prominent-icon {
+  font-size: 1.35rem;
+}
+
+html.g10-redesign .g10-action-group {
+  margin-bottom: 14px;
+}
+
+html.g10-redesign .g10-action-group h3 {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--g10-muted);
+  font-weight: 700;
+}
+
+html.g10-redesign .g10-action-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+html.g10-redesign .g10-action-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 4.75rem;
+  padding: 8px 6px;
+  border-radius: var(--g10-radius);
+  border: 1px solid var(--g10-card-border);
+  background: #fafcfe;
+  color: var(--g10-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.25;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+}
+
+html.g10-redesign .g10-action-tile:hover {
+  background: var(--g10-blue-soft);
+  border-color: var(--g10-blue-border);
+  transform: none;
+  z-index: 1;
+}
+
+html.g10-redesign .g10-action-link {
+  display: none;
+}
+
+html.g10-redesign .g10-search-block {
+  padding: 10px;
+  border-bottom: 1px solid var(--g10-card-border);
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+html.g10-redesign .g10-search-block #searchform,
+html.g10-redesign .g10-search-block #searchform .flexlayout,
+html.g10-redesign .g10-search-block #searchform .flexlayoutcol {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+html.g10-redesign .g10-search-block #searchform .flexlayout {
+  flex-wrap: wrap !important;
+}
+
+html.g10-redesign .g10-search-block,
+html.g10-redesign .g10-search-block #searchform {
+  font-family: var(--g10-font) !important;
+}
+
+html.g10-redesign .g10-search-block input,
+html.g10-redesign .g10-search-block select,
+html.g10-redesign .g10-search-block button {
+  border-radius: 8px !important;
+}
+
+html.g10-redesign .g10-books-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html.g10-redesign .g10-books-stack .g10-book-panel,
+html.g10-redesign .g10-books-stack .g10-carousel-panel,
+html.g10-redesign .g10-books-stack .panel {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  border: 1px solid var(--g10-card-border) !important;
+  border-radius: var(--g10-radius) !important;
+  overflow: visible;
+  box-shadow: 0 2px 8px rgba(13, 74, 122, 0.06);
+}
+
+html.g10-redesign .g10-books-stack .panel-heading,
+html.g10-redesign .g10-books-stack .panel-title {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  gap: 8px;
+  padding: 8px 10px !important;
+  background: var(--g10-blue-soft) !important;
+  border-bottom: 1px solid var(--g10-card-border) !important;
+  color: var(--g10-blue) !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html.g10-redesign .g10-books-stack .panel-heading .title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+html.g10-redesign .g10-books-stack .panel-heading .g10-carousel-rail {
+  flex: 0 0 auto;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 6px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+html.g10-redesign .g10-books-stack .panel-heading .pageInfo {
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+
+html.g10-redesign .g10-books-stack .panel-body {
+  overflow-x: auto;
+  overflow-y: visible;
+  max-width: 100%;
+  padding: 10px !important;
+  box-sizing: border-box;
+}
+
+html.g10-redesign .g10-books-stack .waterfallIcon {
+  display: none !important;
+}
+
+html.g10-redesign .g10-books-stack .headerTitle {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  color: var(--g10-blue) !important;
+}
+
+html.g10-redesign .g10-books-stack .pageInfo {
+  font-size: 12px !important;
+  color: var(--g10-muted) !important;
+  font-weight: 500;
+}
+
+html.g10-redesign .g10-books-stack .g10-carousel-btn,
+html.g10-redesign .g10-books-stack .btnLeft,
+html.g10-redesign .g10-books-stack .btnRight {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+  border: 1px solid var(--g10-blue-border) !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+  background-image: none !important;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  position: relative;
+  vertical-align: middle;
+}
+
+html.g10-redesign .g10-books-stack .g10-carousel-btn--prev::after,
+html.g10-redesign .g10-books-stack .btnLeft::after {
+  content: "‹";
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--g10-blue);
+  line-height: 1;
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  transform: translateY(-1px);
+}
+
+html.g10-redesign .g10-books-stack .g10-carousel-btn--next::after,
+html.g10-redesign .g10-books-stack .btnRight::after {
+  content: "›";
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--g10-blue);
+  line-height: 1;
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  transform: translateY(-1px);
+}
+
+html.g10-redesign .g10-books-stack .g10-carousel-btn:hover,
+html.g10-redesign .g10-books-stack .btnLeft:hover,
+html.g10-redesign .g10-books-stack .btnRight:hover {
+  background: var(--g10-blue-soft) !important;
+}
+
+html.g10-redesign .g10-books-stack img {
+  max-width: 100%;
+  height: auto;
+}
+
+html.g10-redesign .g10-books-stack .pictureList,
+html.g10-redesign .g10-books-stack .list-group-item,
+html.g10-redesign .g10-books-stack [class*="picture"] {
+  max-width: 100%;
+}
+
+html.g10-redesign .g10-apps-strip {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  margin-top: 8px;
+}
+
+html.g10-redesign .g10-apps-title {
+  margin: 0 0 8px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #5c6b7a;
+}
+
+html.g10-redesign .g10-apps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+html.g10-redesign .g10-app-panel {
+  margin: 0 !important;
+  font-size: 12px;
+}
+
+html.g10-redesign .g10-app-panel .panel-body {
+  padding: 8px !important;
+}
+
+html.g10-redesign .g10-app-panel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Full-width footer */
+html.g10-redesign #pageMainContent > footer {
+  flex-shrink: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  align-self: stretch !important;
+}
+
+html.g10-redesign #pageMainContent > footer .footer {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2px 12px !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 4px var(--g10-page-gutter) !important;
+  box-sizing: border-box !important;
+  float: none !important;
+}
+
+html.g10-redesign #pageMainContent > footer .footerDivLeftBorder,
+html.g10-redesign #pageMainContent > footer .footerDivRightBorder {
+  float: none !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  line-height: 1.25 !important;
+  font-size: 11px !important;
+}
+
+html.g10-redesign #pageMainContent > #footer,
+html.g10-redesign #pageMainContent > #divFooter,
+html.g10-redesign #pageMainContent > footer,
+html.g10-redesign #footer,
+html.g10-redesign #divFooter,
+html.g10-redesign footer,
+html.g10-redesign [id$="Footer"],
+html.g10-redesign [id*="footer"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+  align-self: stretch !important;
+}
+
+html.g10-redesign #pageMainContent > * {
+  box-sizing: border-box;
+}
+
+/* Ask Librarian — centered on footer, white chrome, blue content */
+html.g10-redesign .k-animation-container:has(.askLibrarianBox),
+html.g10-redesign .k-animation-container:has(#askLibrarianContent) {
+  z-index: 10003 !important;
+}
+
+html.g10-redesign .k-notification-custom:has(.askLibrarianBox),
+html.g10-redesign .k-notification:has(#askLibrarianContent) {
+  background: #fff !important;
+  border: 1px solid var(--g10-card-border) !important;
+  border-radius: var(--g10-radius) var(--g10-radius) 0 0 !important;
+  box-shadow: 0 2px 14px rgba(13, 74, 122, 0.14) !important;
+}
+
+html.g10-redesign .askLibrarianBox {
+  background: #fff !important;
+}
+
+html.g10-redesign .askboxheader {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 6px 0 0 !important;
+  cursor: pointer !important;
+  background: #fff !important;
+  color: var(--g10-blue) !important;
+  border-bottom: 1px solid var(--g10-card-border) !important;
+}
+
+html.g10-redesign .askLibrarianTitle,
+html.g10-redesign .askLibrarianChatTitle {
+  flex: 1 1 auto;
+  color: var(--g10-blue) !important;
+  font-family: var(--g10-font) !important;
+  font-weight: 700 !important;
+  margin: 0 0 0 14px !important;
+  pointer-events: none;
+}
+
+html.g10-redesign .askLibrarianActions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+html.g10-redesign .askLibrarianResWin .btnSprite {
+  display: inline-block !important;
+  width: 26px !important;
+  height: 22px !important;
+  background-color: var(--g10-blue, #0d4a7a) !important;
+  background-image: none !important;
+  -webkit-mask-image: url("https://nu.insigniails.com/Library/Content/opac/images/system/ask-library.png");
+  mask-image: url("https://nu.insigniails.com/Library/Content/opac/images/system/ask-library.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+html.g10-redesign .askLibrarianContent {
+  background: #fff !important;
+  color: var(--g10-blue) !important;
+  border-color: var(--g10-blue-border) !important;
+}
+
+html.g10-redesign .askLibrarianTreeHeader {
+  background: var(--g10-blue-soft) !important;
+  color: var(--g10-blue) !important;
+  border-bottom-color: var(--g10-card-border) !important;
+}
+
+html.g10-redesign .askLibrarianTreeLibItem,
+html.g10-redesign .askLibrarianTreeTipItem {
+  color: var(--g10-blue) !important;
+}
+
+html.g10-redesign .askLibrarianChatMsgListBox {
+  background: #fff !important;
+  border-color: var(--g10-card-border) !important;
+}
+
+html.g10-redesign .askLibrarianChatMsgItemTitle,
+html.g10-redesign .askLibrarianChatMsgItemText {
+  color: var(--g10-blue) !important;
+}
+
+html.g10-redesign .askLibrarianChatMsgReceiveItemTitle,
+html.g10-redesign .askLibrarianChatMsgReceiveItemText {
+  color: var(--g10-text) !important;
+}
+
+/* —— Login page —— */
+html.g10-redesign.g10-login-page #searchform {
+  display: none !important;
+}
+
+html.g10-redesign.g10-login-page #body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html.g10-redesign.g10-login-page #body > section.flexlayout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--g10-page-gutter) !important;
+}
+
+html.g10-redesign.g10-login-page .divloginContent {
+  margin: 0 auto !important;
+  max-width: 920px;
+  width: 100% !important;
+}
+
+html.g10-redesign.g10-login-page .g10-login-search-books {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
+  margin-bottom: 16px;
+}
+
+html.g10-redesign.g10-login-page .g10-search-books-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: var(--g10-radius-pill);
+  border: 1.5px solid var(--g10-blue-border);
+  background: #fff;
+  color: var(--g10-blue);
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none !important;
+}
+
+html.g10-redesign.g10-login-page .g10-search-books-link:hover,
+html.g10-redesign.g10-login-page .g10-search-books-link:focus {
+  background: var(--g10-blue-soft);
+}
+
+html.g10-redesign.g10-login-page .g10-login-search-note {
+  font-size: 12px;
+  color: var(--g10-muted);
+}
+
+html.g10-redesign.g10-login-page .loginDiv,
+html.g10-redesign.g10-login-page .loginDivRight {
+  border-radius: var(--g10-radius) !important;
+  overflow: hidden;
+}
+
+html.g10-redesign.g10-login-page .loginDiv > .flexlayoutcol:nth-child(2) {
+  background: #fff;
+  border-radius: var(--g10-radius);
+  padding: 20px 24px 24px;
+  box-sizing: border-box;
+}
+
+html.g10-redesign.g10-login-page #UserName,
+html.g10-redesign.g10-login-page #Password,
+html.g10-redesign.g10-login-page .loginText.noBorderTextBox {
+  border-radius: 10px !important;
+  border: 1px solid var(--g10-card-border) !important;
+  padding: 10px 12px !important;
+  box-sizing: border-box;
+}
+
+html.g10-redesign.g10-login-page #LoginIN,
+html.g10-redesign.g10-login-page #LoginIN.k-button,
+html.g10-redesign.g10-login-page .btnLoginStyle.k-button {
+  border-radius: var(--g10-radius-pill) !important;
+  overflow: hidden;
+  background: var(--g10-blue) !important;
+  background-image: none !important;
+  border-color: var(--g10-blue) !important;
+  font-weight: 700 !important;
+  min-height: 40px;
+  padding: 8px 28px !important;
+  box-shadow: none !important;
+}
+
+html.g10-redesign.g10-login-page #divZoomButtons {
+  display: none !important;
+}
+
+/* Hide old overlay artifacts on home */
+html.g10-redesign.g10-home-page #divZoomButtons,
+html.g10-redesign.g10-home-page #g10-room-booking-host,
+html.g10-redesign.g10-home-page .g10-fab,
+html.g10-redesign.g10-home-page #g10-home-book-cta {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  html.g10-redesign .g10-main-row {
+    grid-template-columns: 1fr;
+  }
+
+  html.g10-redesign .g10-insights-row {
+    grid-template-columns: 1fr;
+  }
+
+  html.g10-redesign .g10-prominent-grid {
+    grid-template-columns: 1fr;
+  }
+}
