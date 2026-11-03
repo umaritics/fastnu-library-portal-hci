@@ -1,0 +1,546 @@
+G10 MSM Technologies  |  D3  |  Page 1 of 12 
+D3: Alternatives, Selection Rationale and Storyboard 
+Ideate Stage (Weeks 9–10) • Team G10 – MSM Technologies 
+Item Detail 
+Team G10, MSM Technologies 
+Section G 
+Stage Ideate (Weeks 9 to 10) 
+Deliverable D3, due Week 9 
+Project Usability of the FAST-NU Insignia library portal: study room booking 
+Submitted by Mirza Yahya Adeel (23I-0768), coordination lead for Ideate 
+Input from D2 Requirements R1 to R5, POV1 to POV3, persona spectrum A to C, scenario and journey map. Evidence IDs (e.g. P09-
+B1, SV-5) are the D2 IDs. 
+Team members 
+Name Roll Number Role (from the D0 charter) 
+Muhammad Umar 23I-0782 Team member; coordination lead for Prototype 
+Mirza Yahya Adeel 23I-0768 Team member; coordination lead for Empathize and Ideate 
+Muhammad Usman Al Haq 23I-0585 Team member; coordination lead for Define 
+Shahmeer Atif 23I-0711 Team member; coordination lead for Test 
+D2 requirements we designed against 
+Our scope is the core task from D2: booking a study room through FAST-NU Insignia. The requirements and success criteria 
+below come from D2; the criteria are shortened here. Alternative IDs carry the author's initials: MY = Mirza Yahya Adeel, MU = 
+Muhammad Umar, UH = Muhammad Usman Al Haq, SA = Shahmeer Atif. 
+ID Type Requirement (outcome) Success criterion (short form) 
+R1 Usability First-time bookers reach the room-booking page 
+unassisted. 
+At least 80% reach it within 2 minutes from the portal address, on 
+their own phone (n of at least 10). 
+R2 Usability Students can tell which rooms are free for a chosen 
+day and time from the booking page alone. 
+At least 90% identify every free and every taken room and slot in 
+three prepared views, at most 30 seconds per view, no help. 
+R3 UX Students feel sure a booking they made is held for 
+them. 
+Mean of at least 4.0 on "I am sure this booking is held for me" (1 
+to 5), no rating below 3. 
+R4 Usability Students enter the intended date, slot and length 
+correctly on the first attempt. 
+At least 90% book a specified room, date and two-hour slot with 
+no correction and no help. 
+R5 Accessibility Status can be read and booking completed on a small 
+phone without colour or zooming. 
+All 6 checkpoints pass at 320 CSS px and 200% text: no two-way 
+scrolling, no pinch-zoom, targets at least 24 by 24 px, status 
+without colour, contrast 4.5 to 1, screen reader announces status 
+and result. 
+On 22 October 2026 we also took screenshots of the live portal, on a desktop browser and on a phone browser, to check that the 
+problems we were designing against are still there. They are referred to in Part 4 and collected in Appendix A. Anything in the 
+storyboard that is not in those screenshots is our proposal, not an existing Insignia feature. 
+Part 1 | Individually generated alternatives 
+1.1 How we ran the charrette 
+We did the charrette on campus on Monday 19 October 2026, in a free slot after our lab. Each of us worked alone for 20 minutes 
+with phones away, and no talking until all four were done. The only things on the table were our D2 outputs: persona spectrum, 
+journey map, POV statements, HMW questions and the requirement list. 
+Five concepts each, one per sheet, and you had to write which requirement(s) it hits before looking at anyone else's sheets. The 
+one rule was that your five had to be different approaches (what changes, who does it, or which channel), not the same screen 
+five times with small tweaks. Some of us wrote full sentences and some just wrote notes, so the concepts below are typed up 
+close to how they were written on the sheets, with only spelling and obvious shorthand fixed. 
+G10 MSM Technologies  |  D3  |  Page 2 of 12 
+ 
+Figure 1. Our D2 affinity board, which we ideated from. Pink cards are the theme, insight and need statements; the white notes under them are the 
+evidence notes, labelled with the D2 evidence IDs (e.g. P02-E1, P04-B2, P09-B1, P07-C2) that the concepts and critique below refer to. 
+1.2 Mirza Yahya Adeel (MY) 
+ID Concept D2 requirement(s) addressed 
+MY-1 Availability-first booking. Booking page opens straight on today's rooms. Under each room, 
+every free start time is its own button ("Free 11:00", "Free 12:00"...). You start from a time 
+that's already free, not from a date box and the slider. 
+R2 (see free rooms on the page itself), 
+R4 (no slider, no separate date step) 
+MY-2 Floor-plan map. Simple drawing of the study rooms, each one labelled Free/Taken plus a 
+pattern so it isn't only colour. Tap a room to get its free times. 
+R2, R5 
+MY-3 QR code on each room door. Scan it, see that room's schedule for today, book it right there. R2 if you're already in the library (P09-
+B1). Bit of R1? 
+MY-4 Booking pass. After booking you get a "pass" screen: room, date, start–end time, booking ID. 
+Stays under "My bookings", and there's a share button for the group chat.  
+Basically so nobody has to screenshot the confirmation anymore (P03-C2, P10-B2). 
+R3 
+MY-5 WhatsApp bot. Message a library number, it replies with the free rooms, reply with a number 
+to book. 
+R1 (nothing to find in the portal), R2 
+1.3 Muhammad Umar (MU) 
+ID Concept D2 requirement(s) addressed 
+MU-1 "Book a study room" on home page. Big tile, first thing after login. Also a link on the login 
+page itself, takes you there after sign-in. 
+R1 
+MU-2 Next free room button. Pick length, it just offers one: "Room 3, 11:00–13:00. Book it?" Yes / 
+show next. 
+R4, some R2 (P07-C2) 
+MU-3 Screen at library entrance. Shows rooms free now + next. Same thing on a public web page, 
+no login. 
+R2 
+MU-4 Step-by-step booking. One question per screen. Day (Today / Tomorrow, with the  R4, R5 (big buttons) 
+ID Concept D2 requirement(s) addressed 
+ date written out), then start time, then length as buttons: 1 hr, 2 hr, 3 hr. No slider.  
+MU-5 Room watch. Nothing free: "Tell me when a room frees up", then a notification. R2 partly 
+1.4 Muhammad Usman Al Haq (UH) 
+ID Concept D2 requirement(s) addressed 
+
+G10 MSM Technologies  |  D3  |  Page 3 of 12 
+UH-1 Check-in and auto-release. I think a lot of the "room shows booked but it's empty" problem 
+(P09-B1, SV-5) is people booking and not turning up. So: you have to check in within 15 
+minutes of your start time, either at the desk or by scanning a code on the door. If you don't, 
+the booking is cancelled and the room shows as free again. Not really a screen change, more of 
+a rule change. 
+R2 (whether the status is actually 
+correct, not how it's shown). Also the 
+double booking in S05-F1. 
+UH-2 Fill-in-the-sentence booking. Instead of a form, the student completes "I need a room for ___ 
+people on ___ from ___ for ___ hours" and the portal answers with the rooms that fit. This 
+also finally asks for group size, which P10 pointed out the form never does (P10-B1). 
+R4, partly R2 
+UH-3 Email + SMS receipt. Every booking sends an email and an SMS with room, date, time, a 
+calendar file (.ics) and a cancel link, so there's proof outside the portal too. 
+R3 
+UH-4 Desk uses the same system. When students book at the desk, the staff should book through 
+the same portal schedule for them, so the desk and the portal never disagree and the student 
+still ends up with a record. Persona A is going to keep going to the desk anyway, so this helps 
+them. 
+R2, R3 
+UH-5 Weekly repeat booking. For people who book the same room at the same time every week 
+(persona C, P04-A1). Set it up once and it renews until you cancel it. 
+R2 + R4 partly, persona C only 
+1.5 Shahmeer Atif (SA) 
+ID Concept D2 requirement(s) addressed 
+SA-1 Timeline grid. Rooms = rows, hours = columns. Free cells outlined + "Free", taken ones 
+hatched. Drag across free cells to pick your time. 
+R2, R4 (kind of) 
+SA-2 First-login guide. 3-step overlay pointing at room booking the first time you sign in. 
+Orientation-week email links straight to it. ("nobody told us", P01-B2) 
+R1 
+SA-3 Kiosk. Tablet at the library entrance, log in with roll no., book from today's free rooms. R1 + R2 (only if you're there) 
+SA-4 Group link. Organiser books, sends link, everyone in the group sees room + time, and it shows 
+in their own bookings list too. 
+R3 
+SA-5 Home-screen widget. Shows rooms free in the next 2 hrs without opening the portal / logging 
+in again. 
+R2, maybe R1 
+Part 2 | Team convergence 
+2.1 How the critique ran 
+We met on campus on Tuesday 20 October 2026 for about 90 minutes, all four of us, with the Ideate lead facilitating. All 20 
+sheets went up on one wall and we worked through them as follows. 
+• Silent read. Everyone read all 20 sheets before anyone said anything. 
+• Critique of every alternative. For each sheet in turn we agreed one strength, one concern and the requirement it best 
+satisfies, each tied to D2 evidence or a D2 success criterion. The author spoke last, so the discussion didn't turn into people 
+defending their own ideas. 
+• Coverage scoring. We rated each alternative against the R1 to R5 success criteria and noted whether we could realistically 
+prototype and test it in D4 and D5. 
+• Shortlist and comparison. Anything with at least one Full rating and a testable form went forward. The ones aimed at our 
+leading requirement, R2, were compared head to head. 
+• Decision. By majority vote. Because the front-runner (MY-1) was the facilitator's own concept, Shahmeer (Test lead) chaired 
+the vote instead, and Mirza voted last. 
+Grouping by approach. Before the critique we sorted the 20 sheets by what they change. We did this mainly to check that we 
+had actually diverged, rather than written 20 versions of the same screen. 
+Approach family Alternatives What it changes 
+F1. Change the booking page itself MY-1, MY-2, MU-2, MU-4, UH-2, SA-1 How rooms, times and length are shown and chosen 
+F2. Make booking easy to find MU-1, SA-2, SA-5 How students reach booking 
+F3. Prove the booking is held MY-4, UH-3, SA-4 What students get after booking 
+F4. Bring availability into the building MY-3, MU-3, SA-3 Physical displays and devices 
+F5. Change the process or channel MY-5, UH-1, UH-4, UH-5, MU-5 Policy, staff workflow, messaging, notifications 
+G10 MSM Technologies  |  D3  |  Page 4 of 12 
+One thing became clear at this point: no single family covers R1, R2, R3 and R4 together. F1 is the only family that reaches R2 and 
+R4, F2 the only one aimed at R1, and F3 the only one aimed at R3. 
+2.2 Critique of all 20 alternatives 
+ID Strength Concern Best satisfies 
+MY-1 Free times are the first thing seen, at the exact step 
+where students give up on the portal and ask people 
+instead (journey stage 3; P09-B2, P04-E1). 
+With many rooms the list gets long. Whether a time shown 
+as free is really free still depends on the portal's data (P09-
+B1). 
+R2 
+MY-2 Matches how students already check rooms, by looking 
+at them (P06-B1, "sees what's free"). 
+Needs room positions we haven't mapped. At 320 px, 
+small rooms become tiny targets (R5 checkpoint 3). 
+R2 (larger screens) 
+MY-3 Works where students already are, and the status can 
+be checked against the real room. 
+Only helps students already inside the library.  
+Morning bookers working from elsewhere (P04-B1; P09-B1 
+at 9 am) get nothing. Needs printed codes on doors. 
+R2 partly 
+MY-4 Replaces the screenshots, sticky notes and desk checks 
+students already rely on (P03-C2, P10-B2, P03-B2) with 
+one record. 
+A pass only reassures if the booking really was saved. It 
+does nothing before the booking is made. 
+R3 
+MY-5 Uses the channel students already use to find rooms 
+(P02-E1, P10-E1). 
+Moves booking out of the portal. Text size and screen 
+reader output are outside our control (R5 checkpoint 6). 
+Hard to test against R2's three prepared views. 
+R1 partly 
+MU-1 Directly removes the hunt for the page that took P01 
+about three minutes and made P05 give up after about 
+four (P01-C2, P05-C1). 
+Only fixes the first step. Once on the booking page, the old 
+problems are still there. 
+R1 
+MU-2 Fastest path for practiced users, and answers P07-C2 
+(earliest free slot not shown). 
+Hides which other rooms are free, so a student can't 
+identify every free and every taken room, which R2's 
+criterion requires. A group that wants a particular room 
+loses the choice. 
+R4 
+MU-3 Visible to everyone without sign-in, including persona A 
+students who never open the portal. 
+Hardware and an always-on public page are beyond what 
+we can build. It shows rooms but books nothing. 
+R2 partly 
+MU-4 Removes the slider that three survey respondents 
+complained about (S02-F2, S06-F1, S09-F1) and writes 
+the date out in words (P02-C2, "is this today  
+More screens means more steps. On its own it still doesn't 
+show which rooms are free before the student commits. 
+R4 
+ID Strength Concern Best satisfies 
+ or tomorrow?").   
+MU-5 Removes the refreshing that practiced users do (P04-
+B1). 
+Only useful once the student has already found no free 
+room. Needs a notification channel the portal may not 
+have. 
+R2 partly 
+UH-1 The only alternative that goes after why rooms show 
+the wrong status (P09-B1, SV-5, S05-F1). 
+A library policy and back-end change, not an interface. We 
+can't build or test it in D4 or D5, and it needs the library 
+administrators to agree. 
+R2 (accuracy, not 
+readability) 
+UH-2 Captures group size, which P10 noticed the form never 
+asked for (P10-B1). 
+Several typed or picked fields on a phone is exactly where 
+mis-taps happened (P08-C2). We don't know whether a 
+capacity rule even exists. 
+R4 partly 
+UH-3 Gives students a record outside the portal that they can 
+find later. 
+Depends on email and SMS integration, and arrives after 
+the moment of doubt at the confirmation screen (P03-C2). 
+R3 partly 
+UH-4 Accepts that persona A will keep using the desk (P09-
+E1, P10-A1) and keeps desk and portal on one schedule. 
+Mostly a staff-side change. It doesn't change what 
+students see on the booking page, which is what R2 tests. 
+R2 partly 
+UH-5 Fits the weekly pattern of persona C (P04-A1, P07-A1). Helps the practiced bookers who already succeed and 
+could tie up rooms for everyone else. 
+R2 partly (persona 
+C) 
+SA-1 Shows every room and hour in one view; the best of 
+the set for reading a whole day at a glance (P04-B2). 
+A rooms-by-hours grid at 320 px needs two-way scrolling, 
+which fails R5 checkpoint 1. Drag selection brings back the 
+click-and-undo trouble reported for the slider (S09-F2, S09-
+F3). 
+R2 (wide screens) 
+G10 MSM Technologies  |  D3  |  Page 5 of 12 
+SA-2 Answers "nobody told us" (P01-B2) at the moment of 
+first sign-in. 
+Overlays often get skipped, and it helps once, not the 
+occasional user who has forgotten (P05-B1). 
+R1 partly 
+SA-3 A shared device for students without a phone or data, 
+or who would rather book in person. 
+Hardware cost, a queue in exam weeks (P03-A1), and no 
+help to students booking before they arrive. 
+R2 partly (on site) 
+SA-4 Replaces passing booking details around the group chat 
+(P10-E1) with the record itself. 
+Adds group membership, which no participant asked for. 
+The real doubt is the organiser's own (P03-B1). 
+R3 partly 
+SA-5 Free rooms visible without signing in again, avoiding the 
+sign-in retries we saw in P01-C1 and P06-C1. 
+Needs an app or installable portal. Insignia is a thirdparty 
+system, so this may not be possible. 
+R2 partly 
+2.3 Requirement coverage of all 20 alternatives 
+Full: we think the concept on its own could plausibly meet that requirement's D2 success criterion. Part: it helps, but wouldn't 
+meet the criterion alone. Blank: not addressed. These are our predictions going into D4, not test results. 
+ID R1 R2 R3 R4 R5 Can we prototype and test it in D4/D5? 
+MY-1  Full  Full Part Yes 
+MY-2  Full   Part Yes 
+MY-3 Part Part    No (printed codes) 
+MY-4   Full   Yes 
+MY-5 Part Part    Partly 
+MU-1 Full     Yes 
+MU-2  Part  Full Part Yes 
+MU-3  Part    No (hardware) 
+MU-4    Full Part Yes 
+MU-5  Part    Yes 
+UH-1  Part    No (library policy) 
+UH-2  Part  Part  Yes 
+UH-3   Part   Partly 
+UH-4  Part Part   No (staff system) 
+UH-5  Part  Part  Yes 
+SA-1  Full  Part Fails cp. 1 Yes 
+SA-2 Part     Yes 
+ID R1 R2 R3 R4 R5 Can we prototype and test it in D4/D5? 
+SA-3 Part Part    No (hardware) 
+SA-4   Part   Yes 
+SA-5 Part Part    Partly 
+Reading the matrix. MY-1 is the only alternative with two Full ratings, and one of them is R2, the requirement tied to our leading 
+POV1. MU-1 is the only Full on R1 and MY-4 the only Full on R3. Nothing is Full on R5, because we haven't yet checked any 
+concept against the six R5 checkpoints; we carry R5 as an open risk. MY-1 is rated Part on R5 rather than Full: its single column 
+removes two-way scrolling (checkpoint 1), but the other five checkpoints are still unchecked. 
+G10 MSM Technologies  |  D3  |  Page 6 of 12 
+2.4 Shortlist and head-to-head comparison 
+Our shortlist rule was simple: at least one Full rating, and something we can actually prototype and test. Seven alternatives 
+made it through: MY-1, MY-2, MY-4, MU-1, MU-2, MU-4 and SA-1. 
+Choosing the core. The core had to address R2, because R2 carries the leading opportunity. Four shortlisted alternatives touch 
+R2, so we compared them on the R2, R4 and R5 criteria. 
+Alternative R2: identify every free and taken 
+room in three views, 30 s each 
+R4: correct date, slot and 
+length first time 
+R5 at 320 px Result 
+MY-1 Availability- 
+first 
+Yes. Every room is listed with its 
+free times in words. 
+Yes. Day and start chosen in 
+one tap; no slider. 
+Single column; time buttons 
+wrap. No two-way scroll. 
+Selected as core 
+SA-1 Timeline grid Yes, on a wide screen. Partly. Drag to select repeats 
+the slider errors (S09-F2, S09-
+F3). 
+Fails checkpoint 1: grid needs 
+two-way scrolling. 
+Runner-up, not 
+selected 
+MY-2 Floor-plan  
+map 
+Yes, if room labels fit. No. Needs a separate time 
+step. 
+Small room targets; layout not 
+yet mapped. 
+Not selected 
+MU-2 Next free room Partly. It shows the earliest free 
+room, but only one room at a time, 
+so it can't meet the "every free and 
+every taken room" criterion on its 
+own. 
+Yes. Likely passes. Not selected 
+Elements adopted from other alternatives. MY-1 covers R2 and R4 but, like every F1 alternative, does nothing for R1 or R3. So 
+we added the single Full alternative from each of those columns. Both are small additions and neither changes MY-1's flow. 
+From Element adopted Why 
+MU-1 "Book a study room" tile first on the home page, and a link on the 
+sign-in page 
+Only Full rating on R1 
+MY-4 Booking pass with booking ID, saved under My bookings, with Share Only Full rating on R3 
+MU-4 Length chosen from fixed 1, 2 and 3 hour buttons (not MU-4's one-
+question-per-screen wizard) 
+Removes the slider from the length step (R4). We left out the 
+full wizard because it adds screens and brings the date 
+question back. 
+Decision. MY-1 as the core, with the three elements above. The vote was unanimous, 4 of 4. We discussed SA-1 as an alternative 
+core and dropped it once we agreed on the 320 px check in the comparison table. 
+2.5 Who did what in D3 
+Member Contribution 
+Mirza Yahya Adeel Ideate lead: set up and facilitated the charrette and critique, five concepts (MY-1 to MY-5), compiled the 
+report and Part 4 rationale 
+Muhammad Umar Five concepts (MU-1 to MU-5), kept the critique record during the session, took the portal screenshots in 
+Appendix A 
+Muhammad Usman Al Haq Five concepts (UH-1 to UH-5), coverage scoring against the D2 success criteria 
+Shahmeer Atif Five concepts (SA-1 to SA-5), chaired the selection vote, drew the storyboard panels 
+Part 3 | Storyboard 
+Persona: B, the hesitant portal booker (a composite of P02 and P03). She has used the portal before but is never sure it worked, 
+so she usually backs it up with friends, the desk or a screenshot. 
+Scenario: the D2 core scenario. Her group needs a room for a meeting later the same day. It is morning, when rooms "disappear 
+by ten in the morning" (P04-B1), and she is on her phone (P01-C1, P08-C1). 
+We kept the panels deliberately rough: they are about structure and flow, not visual design. Room names, times and the booking 
+ID are placeholders, and the controls shown are what we plan to prototype in D4, not things Insignia does today. 
+G10 MSM Technologies  |  D3  |  Page 7 of 12 
+ 
+If no room is free (not drawn). At panel 3, every room reads "Taken all day" and a line under the list says so in words, with a 
+"Tomorrow" button and the earliest free time tomorrow. This is the state flagged in OR6 and will be designed in D4A. 
+Storyboard, six panels: (1) the group needs a room; (2) booking is the first thing on the home page; (3) today's rooms with Free/Taken labels; (4) she 
+picks a start time and a length, and one sentence states what will be booked; (5) the booking pass; (6) she shares the pass and the group walks into the 
+room. 
+Part 4 | Design rationale 
+4.1 Concept summary: Free Rooms First 
+Room booking is one tap from the portal home page and opens straight onto the day's rooms. Every free start time is a labelled 
+button, so a student books by picking a time that is already shown as free, then a length from three fixed buttons. Before 
+booking, one sentence states exactly what will be booked. Afterwards, a pass says the room is held and gives a booking ID; the 
+pass stays under "My bookings" and can be shared with the group. 
+A note on naming: the current portal already has a menu entry called "My Room Bookings" (Appendix A, Figure A1).  
+In our design we shorten it to "My bookings", and that is the label used in the storyboard and in the rest of this report. We 
+haven't been able to see what that page currently contains, so the pass and booking ID are new. 
+4.2 Requirements addressed, and how 
+Req. How the concept addresses it Panel Status after D3 
+
+G10 MSM Technologies  |  D3  |  Page 8 of 12 
+R1 "Book a study room" is the first tile on the home page after sign-in, and the 
+sign-in page links to it (from MU-1). First-time bookers no longer need to 
+know it sits under My Account → Booking → Book Room (Figure A1). 
+2 Addressed in design. Still to be tested with 
+first-time bookers on their own phones. 
+R2 The booking page opens on today's rooms (Today and Tomorrow tabs). Each 
+room lists its free start times as buttons reading "Free" and the time, earliest 
+first (P07-C2); fully taken rooms read "Taken all day". Status never relies on 
+colour alone (P09-C2). This replaces the current colour-coded month grid and 
+narrow time strip, which have no visible text legend (Figure A2). 
+3 Addressed for reading the page. Not 
+addressed for whether the portal's data is 
+correct (risk OR1). 
+R3 Before booking, one sentence states room, date, start, end and length. After 
+booking, a pass says "Room 2 is held for you" with a booking ID, is saved 
+under My bookings and can be shared (from MY-4). 
+4, 5 Partly addressed. Depends on what the 
+portal actually records on submit, which we 
+never observed (OR3). 
+R4 Date and start are chosen together by tapping a free time, so there is no 
+separate date picker and no time-range slider (both visible in Figures A2 and 
+A3). Length is one of three buttons (from MU-4). The summary sentence lets 
+the student catch a wrong entry before booking. 
+3, 4 Addressed in design. Length options depend 
+on the library's real rules (OR2). 
+R5 One-column list; time buttons wrap onto new lines, so there is no sideways 
+scrolling at 320 px. Status is shown in words and pattern. Time and length 
+buttons are specified at 44 by 44 px, above the 24 by 24 px minimum, to be 
+measured on the D4 prototype. The summary and the pass are written so a 
+screen reader can announce them as status messages. On a phone today, the 
+booking page is the desktop layout shrunk down, and you have to pan 
+sideways to reach the calendar and the Book button (Figure A6). 
+3 to 5 Partly addressed. None of the six 
+checkpoints has been checked yet; no 
+assistive-technology user in our evidence 
+(OR4). 
+4.3 Alternatives seriously considered and not selected 
+Alternative Why we didn't select it 
+SA-1 Day timeline grid (runner-
+up) 
+It meets R2 as well as MY-1 on a wide screen and was the best at showing a whole day at once (P04-B2).  
+We dropped it because a rooms-by-hours grid needs two-way scrolling at 320 px, which fails R5 checkpoint 1 (WCAG 
+2.2 reflow), and the D2 scenario happens on a phone (P01-C1, P08-C1). Its drag-toselect also brings back the click-
+and-undo problem students reported with the slider (S09-F2, S09-F3), which works against R4. 
+MU-2 Next free room It is the fastest route for practiced bookers and is Full on R4. But it shows one room at a time, so a student can't 
+identify every free and every taken room, which is exactly what R2's criterion tests. It only partly covers our leading 
+requirement. We kept its best idea, showing the earliest free time first (P07-C2), by ordering each room's free times. 
+UH-1 Check-in and autorelease It is the only alternative aimed at why the portal shows rooms as unavailable when they are empty (P09B1, SV-5) 
+and at the double booking in S05-F1. We didn't select it because it is a library policy and backend change that we 
+can't prototype or test in D4 and D5. We are passing it on as a recommendation to the library under open risk OR1. 
+MY-2 Floor-plan map It matches how students check rooms by looking (P06-B1). It still needs a separate time step (R4), its room targets 
+shrink at 320 px (R5 checkpoint 3), and we don't have a verified room layout to draw. 
+4.4 Why we selected it 
+MY-1 became the core because it is the only one of the 20 alternatives that could meet two D2 success criteria on its own, R2 
+and R4, and R2 carries the leading opportunity and POV1. It answers "which rooms are free?" on screen at journey stage 3, the 
+step where students most visibly give up on the portal and ask people (P09-B2, P04-E1). And it does this in a single-column form 
+that can pass R5 at phone width. SA-1 meets R2 just as well but fails R5 checkpoint 1 at 320 px; MU-2 meets R4 but can't pass 
+R2's criterion. 
+We added MU-1 and MY-4 because nothing that changes the booking page touches R1 or R3, and each was the only Full rating in 
+its column. MU-4's fixed length buttons went in because they remove the slider from the one choice MY-1 still left open. None of 
+these changes MY-1's flow, so the result is still one direction rather than a bundle of features, and it stays inside the portal 
+instead of adding a desk, kiosk or messaging service. 
+The need to know which rooms are free shows up at all three points on the persona spectrum, so the core concept serves 
+personas A, B and C, not just one group. 4.5 Open risks 
+ID Risk Req. What D4 and D5 need to watch for 
+OR1 A clearer display can't fix wrong data. If the portal itself marks free 
+rooms as unavailable (P09-B1, SV-5) or allows double booking (S05-
+F1), our design will just show the wrong status more clearly. 
+R2 R2's test uses prepared views, so it won't catch this. In 
+D5, ask testers whether the status shown matched the 
+real room. Recommend UH-1 (checkin and auto-release) 
+to the library. 
+G10 MSM Technologies  |  D3  |  Page 9 of 12 
+OR2 We can see room names and the numbers in brackets beside them, 
+but we don't know the library's real rules: maximum length (P06-C3, 
+"is there a limit?"), group size (P10-B1), how far ahead students can 
+book, or what each calendar colour means. 
+R4, R3 Confirm with library staff before D4A. Until then, the 1, 2 
+and 3 hour buttons and the Today and Tomorrow tabs are 
+our assumptions. 
+OR3 We never saw what the portal does after a booking is submitted. 
+The pass assumes the portal gives back a reliable booking ID, and 
+we haven't confirmed that it does. 
+R3 Prototype the pass and a clear success and failure state, 
+and test R3 straight after a completed test booking, 
+Check whether Insignia returns a booking reference 
+before showing one as real. 
+OR4 R5 rests on WCAG checkpoints, two phone findings from single 
+participants (P08, S06) and our own phone screenshots (Figure A6). 
+No assistive-technology user was in our evidence. A long room list 
+may also mean a lot of vertical scrolling. 
+R5 Run the six-checkpoint walkthrough on the D4 prototype 
+at 320 px and 200% text, with at least one screen reader 
+pass. 
+OR5 The home-page tile only helps students who open the portal. 
+Persona A students who don't know booking exists (P01-B2) may 
+never open it. 
+R1 R1's test starts from the portal address, so it won't show 
+this. Awareness outside the portal (like SA-2's orientation 
+email) is not part of the concept. 
+OR6 We haven't storyboarded the state where no room is free.  
+Students currently respond by refreshing or asking people (P04-B1, 
+P09-B2). The current portal also shows an empty room list with no 
+explanation under some filter settings (Figure A4). 
+R2 D4A has to design this state. MU-5 (room watch) is the 
+candidate to revisit. 
+OR7 Insignia is a third-party system, so we don't know whether its pages 
+can be changed this way. 
+All We test the concept as a prototype; implementation is 
+out of scope. 
+Handoff to D4A. Prototype the flow as selected: find booking → see free rooms → pick time and length → review → booking 
+succeeds or fails. Include the no-rooms-free state, a wrong-status state, and keyboard and screen-reader use. Any booking data 
+in the prototype should be clearly marked as made up, and we should confirm the library's rules before treating lengths, booking 
+IDs or limits as real. 
+Appendix A | Screenshots of the current portal 
+We took these screenshots on 22 October 2026, after the D1B sessions, to check that the problems we designed against are still 
+present in the live portal. Figures A1 to A4 were taken in a desktop browser while signed in; Figures A5 and A6 were taken in a 
+phone browser on the same website. They show what the portal displayed at that moment. They are not participant data, and 
+they don't tell us whether any room was actually free. 
+ 
+Figure A1. Desktop, signed in. Room booking is reached through My Account → Booking, which opens Book Room and My Room Bookings. There is no 
+booking entry on the home page itself. 
+
+G10 MSM Technologies  |  D3  |  Page 10 of 12 
+ 
+Figure A2. Desktop Book Room page for 23/10/2026: room list with a number in brackets after each name, a date field, a colour-coded month grid, a 
+time-range slider under Filter, a separate Select Booking Time strip, a Purpose box and the Book button. We couldn't find a text legend for the calendar 
+colours on this screen. 
+ 
+Figure A3. Desktop, same page with the date-picker popup open. There are two calendars on one screen: the popup for the date field, and the larger 
+month grid beside it. 
+
+G10 MSM Technologies  |  D3  |  Page 11 of 12 
+ 
+Figure A4. Desktop, 22/10/2026, with different filter settings from Figures A2 and A6: the Room Type list shows both Private and Public, and the time 
+range is the whole day (12:00 AM to 11:59 PM). In this state the room list is empty and the month grid is uncoloured, with no message explaining why. 
+Figure A6 shows rooms listed for the same date under the other filter settings, so we read this as the page giving no feedback when the filters return 
+nothing, not as no rooms existing that day. 
+ 
+Figure A5. Phone browser, login page (cropped from the top of the screenshot). The desktop page is drawn small in the upper left, with tiny fields and a 
+lot of empty space. 
+
+G10 MSM Technologies  |  D3  |  Page 12 of 12 
+ 
+Figure A6. Phone browser, the same Book Room page in two screenshots side by side (blank lower parts cropped). Left: room list and filters. Right: after 
+panning sideways, the calendar, time strip, Purpose box and Book button. The layout doesn't reflow to one column; it shrinks, and the booking controls 
+are off-screen until you pan. This shows the R5 problem, but it doesn't measure contrast, target sizes, 200% text or screen-reader behaviour. 

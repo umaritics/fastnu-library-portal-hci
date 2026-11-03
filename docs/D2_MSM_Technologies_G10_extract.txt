@@ -1,0 +1,1352 @@
+CS3014	—	Applied	Human	Computer	Interaction
+FAST	National	University	of	Computer	and	Emerging	Sciences,	H-11/4,	Islamabad
+D2:	Synthesis	Report,	Problem	Statement	and	Requirements
+Item
+Detail
+Team
+G10,	MSM	Technologies
+Section
+G
+Stage
+Define	(Weeks	6–7)
+Deliverable
+D2,	due	Week	8
+Project
+Usability	of	the	FAST-NU	Insignia	library	portal:	study	room	booking	and	book	search
+Submitted	by
+Muhammad	Usman	Al	Haq	(23I-0585),	coordination	lead	for	Define
+Evidence	base
+Primary:	D1B	anonymised	sessions	P01	to	P10,	run	28	September	to	1	October	2026.	Supplementary:	nine	anonymous	survey	responses	S01	to	S09	(4	and	11	October	2026),	used	only	to
+corroborate	and	listed	in	section	1.1b.
+Name
+Roll	Number
+Role	(from	the	D0	charter)
+Muhammad	Umar
+23I-0782
+Team	member;	coordination	lead	for	Prototype
+Mirza	Yahya	Adeel
+23I-0768
+Team	member;	coordination	lead	for	Empathize	and	Ideate
+Muhammad	Usman	Al	Haq
+23I-0585
+Team	member;	coordination	lead	for	Define
+Shahmeer	Atif
+23I-0711
+Team	member;	coordination	lead	for	Test
+How	to	read	this	document
+Evidence	IDs.	P03-C2	means	participant	P03,	Segment	C	(observed	booking	attempt),	note	2.	Segments	follow	D1A:	A	background,	B	retrospective	booking,	C	observed	booking	attempt,	D	book	search,	E	workarounds	and	closing.	Every	ID	is
+listed	in	sections	1.1	and	1.1b.	SV	and	S	IDs	are	survey	cards	(section	1.1b).
+Other	IDs.	K	=	affinity	cluster,	T	=	theme,	I	=	insight,	N	=	need,	U	=	user	story,	R	=	requirement,	HMW	=	How-Might-We,	POV	=	point-of-view	statement.	Numbers	such	as	2.3	inside	the	task	analysis	are	task-analysis	nodes.
+Quotations	are	exactly	as	typed	in	D1B	or	in	the	survey.	[uncertain]	is	carried	over	from	D1B	where	the	note-taker	and	facilitator	could	not	agree	on	what	was	said	or	done.
+Participants	appear	only	as	P01	to	P10,	and	survey	respondents	only	as	S01	to	S09.	No	names,	roll	numbers	or	identifying	details	appear.
+Nothing	in	this	document	describes	a	solution.	Needs,	opportunities	and	requirements	are	outcomes	only.
+Core	task	and	scope.
+	The	core	task	is	booking	a	library	study	room.	D1A	made	it	the	primary	research	question	(RQ1),	and	nine	of	the	ten	interview	participants	used	or	described	a	route	that	skips	the	portal	for	room	booking	(P07	is	the
+exception).	Book	search	(RQ2)	is	carried	through	the	synthesis	as	theme	T4	and	kept	as	a	secondary	finding	for	later	stages.	It	is	not	carried	into	the	POV	or	the	requirements.
+G10 MSM Technologies · CS3014 D2  |  page 1 of 13
+
+Part	1:	Synthesis
+1.1	Evidence	register
+D1B	session	notes	broken	into	one	evidence	unit	per	note	(76	notes).	Each	row	is	one	physical	note	on	the	affinity	wall,	written	with	its	ID.	The	last	column	shows	the	cluster	the	note	sits	in	on	the	final	wall	(clusters	are	defined	in	section	1.2).
+Cx	is	background,	X	is	counter-evidence,	O	is	outlier.
+ID
+Evidence	note
+Cluster
+P01-A1
+First	semester.	Uses	the	library	three	to	four	times	a	week.
+Cx
+P01-A2
+Has	logged	into	the	portal	once,	at	orientation.
+K3
+P01-B1
+Last	booked	a	room	by	asking	at	the	desk.
+K3
+P01-B2
+Did	not	know	rooms	could	be	booked	online:	"nobody	told	us."
+K3
+P01-C1
+On	her	phone.	First	login	failed,	second	worked.
+K4
+P01-C2
+Said	"where	would	rooms	even	be?"	and	took	about	three	minutes	to	find	the	booking	page.
+K3
+P01-D1
+Searched	for	an	introductory	programming	textbook	by	title.	Said	there	were	"too	many	versions."
+K8
+P01-D2
+Used	no	filter.	[uncertain]	whether	she	noticed	the	mode	selector.
+K10
+P01-E1
+Without	the	portal	she	would	"just	walk	to	the	shelf	and	look."
+K9
+P01-E2
+Has	never	changed	search	mode.
+K10
+P02-A1
+Second	year.	Books	a	room	for	team	meetings	about	twice	a	month.
+Cx
+P02-B1
+Sends	a	friend	ahead	to	hold	a	room.
+K1
+P02-B2
+Tried	the	portal	once:	"it	said	something	about	a	slot	and	I	didn't	understand	it."	Abandoned	it.
+K5
+P02-C1
+Found	the	booking	page	quickly.
+X
+P02-C2
+Picked	the	wrong	date	first	and	went	back.	Said	"is	this	today	or	tomorrow?"
+K5
+P02-D1
+Searched	for	a	finance	textbook	on	Google	first:	"Google	gives	me	the	author	faster."
+K9
+P02-D2
+Then	used	the	portal	search	and	found	the	book.
+X
+P02-E1
+Asks	in	a	WhatsApp	group	who	has	a	free	room.
+K1
+P02-E2
+Did	not	know	the	search	had	modes.
+K10
+P03-A1
+Second	year.	Uses	the	library	mostly	in	exam	weeks.
+Cx
+P03-B1
+Booked	online	last	semester:	"I	was	never	sure	it	went	through."
+K6
+P03-B2
+Went	to	the	desk	to	check	that	booking.
+K6
+P03-C1
+Reached	the	confirmation	step	without	trouble.
+X
+P03-C2
+Said	"I'd	normally	screenshot	this."
+K6
+P03-D1
+Looked	for	an	electronics	reference.	Clicked	the	second	search	option:	"I	think	this	is	more	exact."	No	results.
+K8
+P03-D2
+Removed	words	from	the	query	and	found	the	book.
+K8
+P03-E1
+Would	ask	a	senior.
+K9
+P03-E2
+Does	not	use	filters.
+K10
+P04-A1
+Third	year.	Books	a	room	weekly	for	a	study	group	and	final	year	project	meetings.
+Cx
+P04-B1
+Rooms	"disappear	by	ten	in	the	morning,"	so	he	refreshes	the	page.
+K2
+P04-B2
+Cannot	see	at	a	glance	which	rooms	are	free.
+K2
+P04-C1
+Fast	and	practiced.	Moved	to	the	confirm	button	on	the	final	screen	and	withdrew	when	the	stop	rule	was	repeated.
+X
+P04-D1
+Searched	by	an	author's	name.	Results	included	unrelated	items.	Said	"this	search	is	useless	for	authors."
+K8
+P04-E1
+Asks	a	friend	already	inside	the	library	to	keep	a	room.
+K1
+P04-E2
+Has	asked	the	desk	to	hold	one.
+K1
+P05-A1
+Fourth	year.	Rarely	uses	the	portal	and	prefers	to	study	at	home.
+Cx
+P05-B1
+Last	booked	in	second	year:	"I	stopped	bothering."
+O
+P05-C1
+Could	not	find	the	booking	page.	Gave	up	after	about	four	minutes.	Logged	as	incomplete.
+K3
+P05-C2
+Said	"I'd	just	go	to	the	desk."
+K3
+G10 MSM Technologies · CS3014 D2  |  page 2 of 13
+
+P05-C2
+Said	"I'd	just	go	to	the	desk."
+K3
+P05-D1
+Searched	for	a	journal	article.	Nothing	relevant.
+K8
+P05-D2
+Asked	whether	the	portal	"is	only	for	physical	books."	[uncertain]	whether	a	real	belief	or	a	guess.
+K8
+P05-E1
+Uses	Google	Scholar	and	a	shared	drive	kept	by	his	department.
+K9
+P06-A1
+Third	year.	Uses	the	library	for	case	study	preparation.	Books	rooms	rarely.
+Cx
+P06-B1
+Has	never	booked	online.	Walks	in	and	"sees	what's	free."
+K1
+P06-C1
+Unsure	of	credentials:	"is	it	my	roll	number?"	Worked	on	the	second	try.
+K4
+P06-C2
+Found	the	booking	page	after	scrolling	the	home	page.
+K3
+P06-C3
+Chose	a	three	hour	slot	and	asked	"is	there	a	limit?"
+K5
+P06-D1
+Typed	a	full	title	with	subtitle	and	got	nothing.	Shortened	it	and	found	the	book:	"I	did	not	know	that	matters."
+K8
+P06-E1
+Asks	the	librarian.
+K9
+P06-E2
+Has	used	the	portal	only	to	check	a	due	date.
+Cx
+P07-A1
+Postgraduate,	second	semester,	writing	a	thesis	literature	review.	Uses	the	library	daily	and	books	rooms	for	thesis	meetings.
+Cx
+P07-B1
+"Booking	is	okay	but	the	time	slots	are	confusing."	Segment	B	possibly	primed	(facilitator	said	"portal").
+K5
+P07-C1
+Reached	the	confirmation	step	without	help.
+X
+P07-C2
+Noted	that	the	earliest	free	slot	is	not	shown.
+K2
+P07-D1
+Needed	a	specific	edition.	Changed	the	search	mode	on	purpose:	"I	know	the	advanced	one	but	I	don't	trust	it."	Found	the	book	on	the	second	attempt.
+K10
+P07-E1
+Uses	Google	Scholar	and	asks	the	thesis	supervisor	for	sources.
+K9
+P08-A1
+Part	time	MBA	student.	Visits	the	library	on	weekends.
+Cx
+P08-B1
+Messages	the	desk	to	book,	because	"the	portal	is	hard	on	mobile."
+K7
+P08-C1
+On	his	phone.	Said	"this	needs	a	lot	of	zooming."
+K7
+P08-C2
+Mis-tapped	the	date	field	twice.
+K7
+P08-D1
+Searched	for	a	management	book.	Found	it	as	the	first	result:	"this	was	fine."
+X
+P08-E1
+Does	not	use	filters.	Says	he	has	never	needed	to.
+K10
+P09-A1
+Second	year.	Had	booked	at	the	front	desk	earlier	that	day.
+Cx
+P09-B1
+Tried	online	at	9	in	the	morning:	"All	rooms	showed	unavailable	but	I	could	see	empty	rooms."
+K2
+P09-B2
+Went	to	the	desk.
+K1
+P09-C1
+Found	the	booking	page.
+X
+P09-C2
+At	slot	selection	said	"I	don't	know	what	this	colour	means."
+K2
+P09-D1
+Looked	for	a	lab	manual.	Asked	the	desk	staff	and	did	not	use	the	search	box	for	long.
+K9
+P09-E1
+"The	desk	staff	know	which	rooms	are	free."
+K1
+P10-A1
+Third	year.	Books	through	the	desk	regularly	for	a	project	group	of	five.
+O
+P10-B1
+Said	the	form	"asked	nothing	about	how	many	people."	[uncertain]	whether	a	capacity	rule	exists.
+K5
+P10-B2
+Writes	the	room	name	on	a	sticky	note	for	the	group.
+K6
+P10-C1
+Reached	the	confirmation	step.
+X
+P10-C2
+Said	"I	never	know	if	it	saved	or	not."
+K6
+P10-D1
+Searched	by	course	code	and	got	nothing:	"the	portal	doesn't	know	course	codes."
+K8
+P10-E1
+Shares	booking	details	in	the	group	chat.
+K6
+1.1b	Supplementary	survey	evidence
+Nine	anonymous	survey	responses	(S01	to	S09;	eight	on	4	October	and	one	on	11	October	2026)	arrived	after	the	D1B	fieldwork.	The	survey	was	not	part	of	the	approved	D1A	protocol,	so	it	is	used	only	to	corroborate	and	quantify	the
+interview	patterns.	No	theme,	insight	or	need	in	this	document	rests	on	survey	evidence	alone.	Respondents	chose	to	answer,	so	the	counts	describe	these	nine	students	only.	Free	text	is	quoted	exactly,	including	spelling.	Denominators:	7
+respondents	needed	a	room	(S01,	S02,	S03,	S05,	S06,	S08,	S09)	and	6	needed	a	book	and	answered	the	search	questions	(S02,	S03,	S06,	S07,	S08,	S09).
+Respondent
+Level
+Programme	area
+Needed	a	room
+Needed	a	book
+S01
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+No
+S02
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+Yes
+G10 MSM Technologies · CS3014 D2  |  page 3 of 13
+
+S02
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+Yes
+S03
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+Yes
+S04
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+No
+No
+S05
+Undergraduate,	Year	1-2
+EE	/	CE
+Yes
+No
+S06
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+Yes
+S07
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+No
+Yes
+S08
+Undergraduate,	Year	3-4
+CS	/	SE	/	AI
+Yes
+Yes
+S09
+Undergraduate,	Year	1-2
+Business
+Yes
+Yes
+The	survey	broken	into	32	notes,	one	idea	each.	SV	cards	are	tick-box	items	counted	across	respondents;	S0x-F	cards	are	free-text	answers	from	one	respondent.
+ID
+Survey	evidence	note
+Cluster
+SV-1
+5	of	7	respondents	who	needed	a	room	ticked	"Finding	the	booking	page"	(S01,	S02,	S05,	S06,	S09).
+K3
+SV-2
+4	of	7	ticked	"Choosing	the	date"	(S05,	S06,	S08,	S09).
+K5
+SV-3
+6	of	7	ticked	"Choosing	the	time	or	duration"	(S02,	S03,	S05,	S06,	S08,	S09).
+K5
+SV-4
+5	of	7	ticked	"Unsure	whether	the	booking	was	saved"	(S02,	S05,	S06,	S08,	S09).
+K6
+SV-5
+4	of	7	ticked	"Rooms	showed	unavailable	but	were	not"	(S03,	S05,	S06,	S08).
+K2
+SV-6
+1	of	7	ticked	"Using	it	on	mobile"	(S06).
+K7
+SV-7
+Of	6	who	needed	a	book	and	answered	the	search	question,	3	ticked	"Too	many	results"	(S03,	S06,	S08).
+K8
+SV-8
+Of	the	same	6,	3	ticked	"Irrelevant	results"	(S06,	S07,	S08).
+K8
+SV-9
+Of	the	same	6,	1	ticked	"No	results"	(S02).
+K8
+SV-10
+Of	the	same	6,	3	ticked	"Not	sure	which	search	mode	to	use"	(S02,	S06,	S09).
+K10
+SV-11
+8	of	9	answered	No	to	"Did	you	know	the	portal	has	several	search	modes"	(S01,	S02,	S03,	S04,	S05,	S06,	S08,	S09).	S07	answered	yes	and	has	used	them.
+K10
+SV-12
+Of	7	who	needed	a	room,	5	booked	via	the	portal	(S01,	S02,	S05,	S06,	S08)	and	2	asked	at	the	front	desk	(S03,	S09).
+Cx
+SV-13
+Of	6	who	needed	a	book,	2	start	by	asking	library	staff	(S02,	S09),	2	at	the	shelf	(S03,	S06)	and	2	at	portal	search	(S07,	S08).
+K9
+SV-14
+Asked	what	they	have	stopped	trying	on	the	portal,	three	wrote	about	books:	S02	"Finding	books",	S09	"Finding	a	book",	S06	"I	stopped	searching	for	books".
+K9
+SV-15
+Of	the	same	6,	1	ticked	"Found	it	quickly"	(S07).
+X
+S02-F1
+"so	I	ask	the	librarian	and	he	uses	the	portal	and	then	tells	me	where	to	look"
+K9
+S02-F2
+"I	still	can't	properly	use	the	slider	sometimes	when	booking"	(writes	that	they	are	in	the	7th	semester).
+K5
+S02-F3
+"I	then	go	to	the	librarian	for	booking"
+K1
+S04-F1
+"I	don't	ever	go	to	the	library"
+Cx
+S05-F1
+"booked	room	but	someone	else	had	booked	same	room	in	same	time	slot"
+K2
+S06-F1
+"the	button	to	select	the	time	duration	wasent	working	and	looked	stale"
+K5
+S06-F2
+Found	out	only	"after	lots	of	random	clicking"	that	the	date	has	to	be	selected	before	the	time	slot.
+K5
+S06-F3
+"There	was	no	need	for	selecting	date,	it	was	irrelevant."
+K5
+S06-F4
+Says	the	interface	"was	not	responsive".
+K7
+S06-F5
+Search	had	"so	many	cluttered	options	and	buttons"	that	they	were	"left	confused	what	to	do	next".
+K8
+S06-F6
+Search	results	"were	not	relevant	to	what	i	searched	at	all".
+K8
+S06-F7
+Stopped	searching	for	books	because	it	is	"more	teadius	to	login	and	search,	than	to	just	ask	the	librarian	to	search	it	for	me".
+K9
+S06-F8
+"I	also	hesitate	booking	rooms	as	it	requires	too	much	effort"
+O
+S09-F1
+"I	couldn't	understand	the	slider"
+K5
+S09-F2
+Clicked	the	slider	thinking	the	range	was	selected	and	it	"kept	getting	unselecting	bcz	the	annimation	was	weird".
+K5
+S09-F3
+"there	was	no	indication	that	my	first	click	registered	or	not"
+K5
+S09-F4
+A	friend	said	to	click	once	because	"double	clicks	undo	selection".
+K5
+How	to	read	the	survey	responsibly:	S02	ticked	"Booked	via	the	portal"	but	also	writes	that	they	go	to	the	librarian	for	booking	(S02-F3);	both	are	recorded	as	given.	S01	and	S05	named	a	place	they	start	looking	for	a	book	although	they	said
+they	had	not	needed	one,	so	those	two	answers	are	not	used.
+G10 MSM Technologies · CS3014 D2  |  page 4 of 13
+
+1.2	Affinity	map:	clusters
+Clusters	were	formed	bottom-up	from	the	notes	above	and	named	only	after	the	pattern	was	stable.	Labels	describe	what	is	happening,	not	what	to	build.	Note	and	participant	counts	in	this	table	are	D1B	only;	the	next	table	adds	the	survey
+cards.
+Cluster
+Pattern	label
+Note	IDs
+Notes
+Participants
+K1
+Students	ask	friends	or	the	front	desk,	or	walk	in,	to	find	out	which	rooms
+are	free	and	to	hold	one.
+P02-B1,	P02-E1,	P04-E1,	P04-E2,	P06-B1,	P09-B2,	P09-E1
+7
+4	(P02,	P04,	P06,	P09)
+K2
+Students	cannot	read	from	the	portal	which	rooms	and	slots	are	actually
+free.
+P04-B1,	P04-B2,	P07-C2,	P09-B1,	P09-C2
+5
+3	(P04,	P07,	P09)
+K3
+Students	did	not	know	room	booking	exists,	or	cannot	find	where	it	starts.
+P01-A2,	P01-B1,	P01-B2,	P01-C2,	P05-C1,	P05-C2,	P06-C2
+7
+3	(P01,	P05,	P06)
+K4
+Students	need	more	than	one	attempt	to	sign	in.
+P01-C1,	P06-C1
+2
+2	(P01,	P06)
+K5
+Students	are	unsure	what	the	date,	slot	and	limit	mean	while	they	are
+choosing.
+P02-B2,	P02-C2,	P06-C3,	P07-B1,	P10-B1
+5
+4	(P02,	P06,	P07,	P10)
+K6
+Students	are	unsure	a	booking	was	recorded	and	keep	their	own	proof.
+P03-B1,	P03-B2,	P03-C2,	P10-B2,	P10-C2,	P10-E1
+6
+2	(P03,	P10)
+K7
+One	student	finds	the	booking	form	hard	to	operate	on	a	phone.
+P08-B1,	P08-C1,	P08-C2
+3
+1	(P08)
+K8
+Search	queries	return	nothing	or	unrelated	items,	and	students	guess	how
+to	reword	them.
+P01-D1,	P03-D1,	P03-D2,	P04-D1,	P05-D1,	P05-D2,	P06-D1,	P10-D1
+8
+6	(P01,	P03,	P04,	P05,	P06,	P10)
+K9
+Students	start	looking	for	a	book	somewhere	other	than	the	portal.
+P01-E1,	P02-D1,	P03-E1,	P05-E1,	P06-E1,	P07-E1,	P09-D1
+7
+7	(P01,	P02,	P03,	P05,	P06,	P07,	P09)
+K10
+Students	do	not	use,	or	do	not	trust,	the	search	modes	and	filters.
+P01-D2,	P01-E2,	P02-E2,	P03-E2,	P07-D1,	P08-E1
+6
+5	(P01,	P02,	P03,	P07,	P08)
+X
+Counter-evidence:	found	the	booking	page,	reached	confirmation,	or	got	a
+result	without	difficulty.
+P02-C1,	P02-D2,	P03-C1,	P04-C1,	P07-C1,	P08-D1,	P09-C1,	P10-C1
+8
+7	(P02,	P03,	P04,	P07,	P08,	P09,	P10)
+Cx
+Background	and	context	notes.
+P01-A1,	P02-A1,	P03-A1,	P04-A1,	P05-A1,	P06-A1,	P06-E2,	P07-A1,	P08-A1,
+P09-A1
+10
+9	(P01,	P02,	P03,	P04,	P05,	P06,	P07,	P08,	P09)
+O
+Outliers:	stopped	using	the	portal	for	booking,	or	books	by	habit	at	the
+desk,	with	no	reason	stated	or	a	different	reason.
+P05-B1,	P10-A1
+2
+2	(P05,	P10)
+Notes	per	cluster	on	the	full	wall.
+	The	wall	holds	108	notes:	76	from	D1B	and	32	survey	cards.
+Cluster
+D1B	notes
+Survey	cards
+Total	on	the	wall
+Survey	card	IDs
+K1
+7
+1
+8
+S02-F3
+K2
+5
+2
+7
+SV-5,	S05-F1
+K3
+7
+1
+8
+SV-1
+K4
+2
+0
+2
+none
+K5
+5
+10
+15
+SV-2,	SV-3,	S02-F2,	S06-F1,	S06-F2,	S06-F3,	S09-F1,	S09-F2,	S09-F3,	S09-F4
+K6
+6
+1
+7
+SV-4
+K7
+3
+2
+5
+SV-6,	S06-F4
+K8
+8
+5
+13
+SV-7,	SV-8,	SV-9,	S06-F5,	S06-F6
+K9
+7
+4
+11
+SV-13,	SV-14,	S02-F1,	S06-F7
+K10
+6
+2
+8
+SV-10,	SV-11
+X
+8
+1
+9
+SV-15
+Cx
+10
+2
+12
+SV-12,	S04-F1
+O
+2
+1
+3
+S06-F8
+Total
+76
+32
+108
+Clustering	decisions	(what	was	merged,	split	or	left	alone,	and	why).
+K1	and	K2	were	first	seen	as	two	groups,	one	about	people	and	one	about	the	screen.	They	are	linked:	the	notes	in	K1	describe	what	students	do	about	the	problem	in	K2	(P09-E1	says	the	desk	staff	know	which	rooms	are	free).	They	are
+carried	together	as	theme	T1.
+K3	and	K4	were	merged	into	theme	T2	because	both	are	about	reaching	the	booking	page.	K4	is	only	two	notes	and	is	not	a	theme	on	its	own.
+K5	and	K6	were	kept	as	separate	clusters	(what	the	controls	mean	before	choosing,	and	whether	it	was	recorded	after)	and	merged	into	theme	T3	because	in	both	students	are	unsure	what	the	system	did	with	their	input.
+K7	stays	a	single-voice	finding	(P08	in	the	interviews,	S06	in	the	survey).	A	single	quote	is	not	a	theme,	so	it	is	not	carried	into	a	theme.	It	still	informs	requirement	R5	and	is	marked	as	thin	evidence	there.
+K8,	K9	and	K10	are	the	book-search	clusters.	They	are	merged	into	theme	T4	because	all	three	describe	students	working	around	what	search	can	find.
+G10 MSM Technologies · CS3014 D2  |  page 5 of 13
+
+P05-B1,	P10-A1	and	S06-F8	do	not	fit	anywhere	without	inventing	a	reason,	so	they	stay	as	outliers.
+X	holds	counter-evidence.	It	limits	how	far	T2	can	be	generalised:	six	interview	participants	reached	the	booking	page	or	confirmation	step	without	difficulty	(P02-C1,	P03-C1,	P04-C1,	P07-C1,	P09-C1,	P10-C1).
+Headline	count.
+	Nine	of	ten	interview	participants	used	or	described	a	route	other	than	the	portal	for	getting	a	room:	P01-B1,	P02-B1,	P03-B2,	P04-E2,	P05-C2,	P06-B1,	P08-B1,	P09-B2,	P10-A1.	P07	is	the	one	participant	who	described
+booking	on	the	portal	without	a	workaround.
+1.3	From	themes	to	insights	to	needs
+The	four	strongest	patterns.	Each	need	is	stated	independently	of	any	solution.	The	wording	in	the	Insight	and	Need	columns	is	the	exact	wording	the	POV	statements	in	section	2.2	reuse.
+Chain
+Theme	(what	recurs)
+Insight	(why)
+Need	(what	is	required)
+Clusters
+Evidence	IDs
+Strength
+T1	/	I1	/	N1
+Students	ask	friends	or	the	front	desk,
+or	walk	in,	to	find	out	which	rooms	are
+free	and	to	hold	one.
+I1:	they	cannot	tell	from	the	portal
+which	rooms	are	actually	free
+N1:	to	know	which	rooms	are	free
+before	they	commit	to	a	booking
+K1,	K2
+P02-B1,	P02-E1,	P04-E1,	P04-E2,	P06-B1,	P09-B2,
+P09-E1,	P04-B1,	P04-B2,	P07-C2,	P09-B1,	P09-C2
+12	notes,	5	participants	(P02,	P04,
+P06,	P07,	P09).	Includes	practiced
+users	(P04,	P07).
+T2	/	I2	/	N2
+Students	who	are	new	to	the	portal	or
+book	rarely	did	not	know	room	booking
+exists,	or	cannot	find	where	it	starts,
+and	need	more	than	one	attempt	to
+sign	in.
+I2:	they	learn	the	portal	can	book
+rooms	only	if	someone	tells	them,	and
+they	do	not	know	where	to	look
+N2:	to	know	that	room	booking
+exists	and	where	it	starts
+K3,	K4
+P01-A2,	P01-B1,	P01-B2,	P01-C2,	P05-C1,	P05-C2,
+P06-C2,	P01-C1,	P06-C1
+9	notes,	3	participants	(P01,	P05,
+P06).	Holds	for	newer	or	occasional
+users	only;	see	counter-evidence	X.
+T3	/	I3	/	N3
+Students	are	unsure	what	the	date,	slot
+and	limit	mean	while	choosing,	and
+unsure	afterwards	that	a	booking	was
+recorded.
+I3:	they	cannot	be	sure	what	the	date,
+slot	and	limit	mean,	or	whether	a
+booking	was	recorded,	so	they	ask
+aloud,	check	in	person	or	keep	their
+own	proof
+N3:	to	be	sure	what	they	have
+chosen	and	that	the	booking	is
+held	for	them
+K5,	K6
+P02-B2,	P02-C2,	P06-C3,	P07-B1,	P10-B1,	P03-B1,
+P03-B2,	P03-C2,	P10-B2,	P10-C2,	P10-E1
+11	notes,	5	participants	(P02,	P03,
+P06,	P07,	P10).	If	the	possibly
+primed	P07-B1	is	removed,	10	notes
+and	4	participants	remain.
+T4	/	I4	/	N4
+Students	often	start	looking	for	a	book
+outside	the	portal,	and	when	they	use
+portal	search,	queries	that	return
+nothing	or	unrelated	items	leave	them
+guessing	how	to	reword	them.
+I4:	they	do	not	know	what	the	portal
+search	can	match,	so	they	guess	at
+rewording	or	look	elsewhere
+N4:	to	know	what	a	search	on	the
+portal	can	find	and	how	to	ask	for
+it
+K8,	K9,	K10
+P06-D1,	P10-D1,	P04-D1,	P03-D1,	P03-D2,	P05-D2,
+P02-D1,	P01-E1,	P09-D1,	P07-D1,	P02-E2,	P01-E2
+21	notes,	all	10	participants.	Not
+carried	into	the	POV	(see	scope
+note).	Secondary.
+Survey	corroboration	of	the	ladder.
+	Supplementary	only.	The	theme,	insight	and	need	wording	above	is	unchanged.
+Chain
+Survey	evidence
+What	it	adds
+T1
+SV-5,	S05-F1,	S02-F3
+4	of	7	respondents	who	needed	a	room	ticked	"Rooms	showed	unavailable	but	were	not",	the	same	mismatch	as	P09-B1.	S05-F1	reports	someone	else
+booking	the	same	room	and	slot.
+T2
+SV-1
+5	of	7	ticked	"Finding	the	booking	page",	against	3	of	10	interview	participants	(P01,	P05,	P06).	Both	samples	are	small.
+T3
+SV-2,	SV-3,	SV-4,	S02-F2,	S06-F1,	S06-F2,	S06-F3,	S09-F1	to	S09-
+F4
+6	of	7	ticked	time	or	duration,	4	of	7	the	date	and	5	of	7	"Unsure	whether	the	booking	was	saved".	Three	respondents	wrote	about	the	slider	or	time	control
+(S02,	S06,	S09),	and	S09-F3	says	there	was	"no	indication	that	my	first	click	registered	or	not".
+T4
+SV-7	to	SV-11,	SV-13,	SV-14,	S02-F1,	S06-F5	to	S06-F7
+8	of	9	did	not	know	the	portal	has	several	search	modes.	3	of	6	portal-search	users	were	not	sure	which	mode	to	use.	4	of	6	who	needed	a	book	start	with
+staff	or	the	shelf.	Counter-evidence:	S07	found	a	book	quickly	and	uses	the	modes	(SV-11,	SV-15).
+S06	wrote	8	of	the	17	free-text	notes,	and	no	row	above	rests	on	S06	alone.
+Findings	that	challenge	the	D0	assumptions.
+	The	evidence	did	not	simply	confirm	D0.
+Assumption	1	(room	booking)	is	only	partly	supported.	Students	stall	at	several	points,	not	only	the	two	D0	named:	finding	the	page	(P01,	P05,	P06),	reading	which	rooms	are	free	(P04,	P07,	P09),	and	the	date	or	slot	(P02,	P06,	P08,	P10).	In
+the	interviews	no	participant	named	the	"duration	slider"	that	D0	blamed.	They	spoke	about	the	"slot"	(P02-B2,	P07-B1),	the	date	(P02-C2,	P08-C2)	and	colour	(P09-C2).	The	survey	does	name	the	control:	three	respondents	wrote	about	the
+slider	or	time	control	(S02-F2,	S06-F1,	S09-F1)	and	6	of	7	who	needed	a	room	ticked	"Choosing	the	time	or	duration"	(SV-3).	So	the	control	concern	in	D0	is	supported	by	the	survey	and	not	by	the	interviews.	Confirming	was	never	observed
+because	every	interview	participant	stopped	before	confirming,	by	protocol.
+The	bypass	is	real.	Nine	of	ten	interview	participants	used	or	described	a	non-portal	route	for	getting	a	room	(headline	count	in	1.2).
+Assumption	2	(search	modes)	is	only	partly	supported.	Four	interview	participants	do	not	use	filters	or	modes	(P01-E2,	P02-E2,	P03-E2,	P08-E1),	but	P08	found	his	book	as	the	first	result	and	called	it	"fine"	(P08-D1),	and	P02	found	hers	on
+the	portal	(P02-D2).	The	stronger	pattern	is	that	students	start	elsewhere	(K9,	seven	participants)	and	that	queries	return	nothing	(K8,	six	participants).	The	survey	adds	that	8	of	9	did	not	know	the	modes	exist	(SV-11).
+G10 MSM Technologies · CS3014 D2  |  page 6 of 13
+
+1.4	Persona	spectrum:	students	who	book	study	rooms
+The	evidence	shows	real	variation	in	how	far	students	rely	on	the	portal	to	get	a	room,	so	a	spectrum	represents	it	better	than	one	composite	persona.	A	single	"average	student"	would	hide	the	difference	between	P04,	who	books	weekly	and
+refreshes	the	page,	and	P01,	who	did	not	know	rooms	could	be	booked	online.
+Dimension:	how	far	the	student	relies	on	the	portal	to	secure	a	room.
+	Portal	bypassed	(A)	→	portal	tried,	then	checked	elsewhere	(B)	→	portal	used	by	habit,	still	backed	up	by	people	(C).
+Each	point	is	a	composite	of	several	participants,	not	one	person.	Placement	is	a	judgement	from	the	notes:	P02	sits	at	B	because	he	attempted	the	portal	and	abandoned	it	(P02-B2)	although	he	also	sends	a	friend	(P02-B1);	P08	sits	at	A
+because	he	messages	the	desk	instead	of	booking	(P08-B1).
+A.	Desk-and-friends	booker
+B.	Hesitant	portal	booker
+C.	Practiced	portal	booker
+Built	from
+P01,	P05,	P06,	P08,	P09,	P10
+P02,	P03
+P04,	P07
+Goal
+Get	a	room	for	the	group	by	whichever	route	works	(P09-A1,	P10-A1,
+P06-B1).
+Book	a	room	on	the	portal	for	team	meetings	or	exam-week	study
+(P02-A1,	P03-A1,	P03-B1).
+Secure	a	room	for	regular	study	group,	project	or	thesis	meetings
+(P04-A1,	P07-A1).
+Behaviour
+Asks	at,	messages	or	walks	to	the	desk	(P01-B1,	P08-B1,	P06-B1,
+P09-B2).	Has	used	the	portal	for	little	else,	for	example	checking	a
+due	date	(P06-E2).
+Tries	the	portal,	then	verifies	elsewhere:	sends	a	friend	(P02-B1),
+asks	a	WhatsApp	group	(P02-E1),	goes	to	the	desk	to	check	(P03-
+B2),	would	screenshot	(P03-C2).
+Books	weekly	or	daily	and	is	fast	(P04-A1,	P04-C1,	P07-A1,	P07-C1).
+Refreshes	the	page	(P04-B1).	Asks	a	friend	inside	or	the	desk	to	hold
+a	room	(P04-E1,	P04-E2).
+Frustration
+Did	not	know	booking	exists	(P01-B2).	Could	not	find	the	page	(P05-
+C1).	All	rooms	showed	unavailable	while	empty	rooms	were	visible
+(P09-B1).	Phone	is	hard	(P08-B1).
+A	slot	they	did	not	understand	(P02-B2).	Never	sure	the	booking
+went	through	(P03-B1).
+Cannot	see	at	a	glance	which	rooms	are	free	(P04-B2).	Earliest	free
+slot	is	not	shown	(P07-C2).	Rooms	gone	"by	ten	in	the	morning"
+(P04-B1).
+Context
+New	or	occasional	portal	users	(P01-A2,	P05-A1,	P06-A1).	On	a
+phone	(P01-C1,	P08-C1).
+Booking	about	twice	a	month	(P02-A1)	or	mostly	in	exam	weeks
+(P03-A1).
+Weekly	(P04-A1)	or	daily	library	use	(P07-A1).	Competes	for	rooms
+early	in	the	morning	(P04-B1).
+Needs
+N2,	N1
+N3,	N1
+N1	(leading),	N3
+What	would	count	as	support
+To	find	out	that	booking	exists	and	where	it	starts,	and	to	see	which
+rooms	are	free	without	a	person.
+To	be	sure	what	they	chose	and	that	it	is	held	for	them.
+To	tell	which	rooms	are	free	quickly,	without	refreshing	or	asking.
+The	need	to	tell	which	rooms	are	free	(N1)	shows	up	at	all	three	points:	A	(P09-B1,	P09-E1),	B	(P02-B1,	P02-E1)	and	C	(P04-B2,	P07-C2).
+1.5	Scenario
+A	composite	of	observed	behaviour.	No	detail	is	added	for	realism.
+Question
+Answer	(evidence)
+Who
+A	student	who	books	study	rooms,	at	any	point	on	the	spectrum.
+Task
+Get	a	room	for	a	group	meeting	that	day	(P04-A1,	P07-A1,	P10-A1).
+Context
+Morning,	when	rooms	"disappear	by	ten	in	the	morning"	(P04-B1)	and	one	student	tried	at	9	(P09-B1).	Often	on	a	phone	(P01-C1,	P08-C1).
+What	happens
+See	narrative	below.
+A	student	needs	a	room	for	a	group	meeting	later	that	day.	They	open	the	portal	on	their	phone	and	sign	in,	sometimes	at	the	second	attempt	(P01-C1,	P06-C1).	If	they	have	not	booked	before	they	look	for	where	rooms	are,	scroll	the	home
+page,	and	may	give	up	and	go	to	the	desk	(P01-C2,	P06-C2,	P05-C1,	P05-C2).	On	the	booking	page	they	cannot	tell	which	rooms	are	actually	free,	so	they	refresh,	message	a	friend	or	the	group	chat,	or	ask	the	desk	(P04-B1,	P02-E1,	P04-E2,
+P09-B1,	P09-B2).	If	they	do	pick	a	date	and	slot	they	check,	correct	or	ask	about	what	they	chose	(P02-C2,	P06-C3),	and	afterwards	they	keep	their	own	proof	such	as	a	screenshot	or	a	sticky	note,	or	go	to	the	desk	to	check	(P03-C2,	P10-B2,
+P03-B2).
+G10 MSM Technologies · CS3014 D2  |  page 7 of 13
+
+1.6	Journey	map:	booking	a	study	room
+Stages	follow	how	the	task	actually	unfolds	in	the	notes.	Emotions	are	limited	to	what	was	said	or	visibly	observed.	Opportunities	are	needs,	not	features.
+Stage
+Actions
+Thoughts
+Emotions
+Pain	points
+Opportunities	(needs)
+1.	Decide	how	to	get	a
+room
+Asks	at	the	desk	(P01-B1),	sends	a	friend
+ahead	(P02-B1),	walks	in	(P06-B1),
+messages	the	desk	(P08-B1).
+"nobody	told	us"	(P01-B2).	"I	stopped	bothering"
+(P05-B1).	"the	portal	is	hard	on	mobile"	(P08-B1).
+Resigned	(self-report,
+P05-B1).
+Students	do	not	learn	the	portal	can	book
+rooms	(P01-B2).	Some	stop	trying	(P05-B1).
+Help	students	know,	when	they	need	a
+room,	that	the	portal	can	book	one	(N2).
+2.	Reach	the	booking
+page
+Signs	in	and	retries	(P01-C1,	P06-C1).
+Scrolls	the	home	page	(P06-C2).	Searches
+for	the	page	for	about	three	minutes	(P01-
+C2)	or	about	four	minutes	and	gives	up
+(P05-C1).
+"where	would	rooms	even	be?"	(P01-C2).	"is	it	my
+roll	number?"	(P06-C1).	"I'd	just	go	to	the	desk."
+(P05-C2).
+Uncertain	(observed,
+P01-C2,	P06-C1).	Giving
+up	(observed,	P05-C1).
+First	login	fails	(P01-C1).	Page	found	only
+after	scrolling	(P06-C2).	Task	abandoned
+(P05-C1).	Survey:	5	of	7	ticked	"Finding	the
+booking	page"	(SV-1).
+Help	students	know	how	to	sign	in	and
+where	room	booking	starts	(N2).
+3.	Check	which	rooms
+are	free
+Refreshes	the	page	(P04-B1).	Asks	a
+WhatsApp	group	(P02-E1)	or	a	friend	inside
+(P04-E1).	Asks	the	desk	to	hold	a	room
+(P04-E2).	Goes	to	the	desk	after	rooms
+show	unavailable	(P09-B2).	Reads	slot
+colours	(P09-C2).
+"All	rooms	showed	unavailable	but	I	could	see
+empty	rooms."	(P09-B1).	"I	don't	know	what	this
+colour	means."	(P09-C2).	"The	desk	staff	know
+which	rooms	are	free."	(P09-E1).
+Uncertain	(observed,
+P09-C2).	Practiced	but
+working	around	it
+(observed,	P04-C1,	P04-
+B1).
+Cannot	see	at	a	glance	which	rooms	are
+free	(P04-B2).	Earliest	free	slot	is	not	shown
+(P07-C2).	Displayed	status	disagrees	with
+the	room	(P09-B1;	survey	SV-5,	4	of	7).
+Help	students	know	which	rooms	are	free
+before	they	commit	to	a	booking	(N1).
+Leading	opportunity.
+4.	Enter	date	and	slot
+Picks	a	date,	goes	back	after	a	wrong	one
+(P02-C2).	Mis-taps	the	date	field	twice	(P08-
+C2).	Zooms	in	on	a	phone	(P08-C1).
+Chooses	a	three	hour	slot	(P06-C3).
+"is	this	today	or	tomorrow?"	(P02-C2).	"is	there	a
+limit?"	(P06-C3).	"it	said	something	about	a	slot	and
+I	didn't	understand	it."	(P02-B2).	"this	needs	a	lot	of
+zooming."	(P08-C1).	Form	"asked	nothing	about
+how	many	people."	(P10-B1,	[uncertain]).	Survey:
+"no	indication	that	my	first	click	registered	or	not"
+(S09-F3).
+Uncertain	(observed
+questions,	P02-C2,	P06-
+C3).
+Wrong	date	first	(P02-C2).	Two	mis-taps
+(P08-C2).	A	slot	not	understood,	so	the
+portal	was	abandoned	(P02-B2).	Survey:	6
+of	7	ticked	time	or	duration	(SV-3).
+Help	students	understand	what	date,	slot
+and	limit	they	are	choosing,	including	on	a
+small	screen	(N3).
+5.	Confirm	and	keep	a
+record
+Reaches	the	confirmation	step	(P03-C1,
+P07-C1,	P10-C1)	and	stops,	by	protocol.
+Would	screenshot	(P03-C2).	Writes	the	room
+on	a	sticky	note	(P10-B2).	Shares	details	in
+the	group	chat	(P10-E1).	Goes	to	the	desk	to
+check	(P03-B2).
+"I	was	never	sure	it	went	through."	(P03-B1).	"I
+never	know	if	it	saved	or	not."	(P10-C2).	"I'd
+normally	screenshot	this."	(P03-C2).
+Unsure	(self-report,	P03-
+B1,	P10-C2).
+Students	are	not	sure	a	booking	is	recorded
+and	build	their	own	proof	(P03-B1,	P10-C2,
+P10-B2).	Survey:	5	of	7	ticked	"Unsure
+whether	the	booking	was	saved"	(SV-4).
+Help	students	be	sure	what	they	have
+booked	and	that	it	is	held	for	them	(N3).
+Gaps	marked,	not	filled.
+	(1)	Submitting	the	booking	was	never	observed,	because	every	interview	participant	stopped	before	confirming	(D1A	stop	rule),	so	stage	5	rests	on	retrospective	accounts	(P03-B1,	P10-C2),	remarks	at	the
+confirmation	screen	and	the	survey.	(2)	Using	the	room	after	booking	was	not	part	of	the	protocol	and	is	not	mapped.	(3)	Time-to-locate	is	reported	in	D1B	for	P01	(about	three	minutes)	and	P05	(about	four	minutes)	only.	(4)	No	participant	or
+respondent	described	a	screen	reader,	magnification	tool	or	other	assistive	technology.
+1.7	Leading	opportunity
+Help	students	know	which	rooms	are	free	before	they	commit	to	a	booking	(N1,	stage	3).
+	It	is	the	strongest	candidate	for	the	problem	statement	because	it	is:
+clearly	supported:	12	interview	notes	from	5	participants,	mixing	observed	behaviour	(P07-C2,	P09-C2,	P04-C1)	with	retrospective	accounts	(P09-B1,	P04-B1,	P02-B1),	plus	survey	support	(SV-5,	S05-F1);
+present	at	all	three	spectrum	points	(A:	P09,	P06;	B:	P02;	C:	P04,	P07);
+central	to	the	core	task,	because	it	is	the	step	where	students	most	visibly	leave	the	portal	for	people	(P09-B2,	P04-E1,	P04-E2,	P02-E1);
+phrased	as	a	need.	Many	designs	could	answer	it,	and	none	is	chosen	here.
+N2	and	N3	stay	as	supporting	needs	and	feed	the	supporting	POV	statements	in	section	2.2.
+G10 MSM Technologies · CS3014 D2  |  page 8 of 13
+
+Part	2:	Problem	Framing
+2.1	Hierarchical	task	analysis:	booking	a	study	room
+Two	levels	below	the	goal.	Sub-goals	follow	the	journey	map	stages	2	to	5	and	the	actions	follow	its	Actions	column.	Journey	stage	1	(deciding	how	to	get	a	room)	happens	before	the	portal	task	starts,	so	it	appears	as	an	exit	in	Plan	0	rather
+than	as	a	sub-goal.	D0	recorded	the	portal	path	as	My	Account,	Booking,	Book	Room,	but	the	D1B	notes	do	not	record	click	paths,	so	actions	1.3	and	1.4	are	written	only	at	the	level	the	evidence	supports.
+Goal	0:	A	study	room	is	held	for	the	group	on	the	chosen	date	and	time.
+Level
+ID
+Sub-goal	or	action
+Evidence
+Sub-goal
+1
+Reach	the	booking	page
+P01-C2,	P05-C1,	P06-C2
+Action
+1.1
+			Open	the	library	portal
+All	observed	attempts	(P01-C1	to	P10-C1)
+Action
+1.2
+			Sign	in
+P01-C1,	P06-C1
+Action
+1.3
+			Look	for	room	booking
+P01-C2,	P05-C1,	P06-C2
+Action
+1.4
+			Open	the	booking	page
+P02-C1,	P09-C1
+Sub-goal
+2
+Find	out	which	rooms	are	free
+P04-B2,	P07-C2,	P09-B1
+Action
+2.1
+			Read	the	rooms	and	slots	shown
+P04-B2,	P07-C2,	P09-C2
+Action
+2.2
+			Refresh	the	page
+P04-B1
+Action
+2.3
+			Ask	a	friend,	the	group	chat	or	the	desk
+P02-E1,	P04-E1,	P04-E2,	P09-B2
+Sub-goal
+3
+Enter	the	date	and	slot
+P02-C2,	P06-C3,	P08-C2
+Action
+3.1
+			Choose	the	date
+P02-C2,	P08-C2
+Action
+3.2
+			Choose	the	slot	and	its	length
+P06-C3,	P07-B1
+Action
+3.3
+			Go	back	and	correct	an	entry
+P02-C2
+Sub-goal
+4
+Confirm	and	keep	a	record
+P03-B1,	P10-C2
+Action
+4.1
+			Review	the	details	entered
+P03-C1,	P07-C1,	P10-C1
+Action
+4.2
+			Submit	the	booking
+Not	observed	(stop	rule)
+Action
+4.3
+			Keep	or	check	a	record	of	the	booking
+P03-B2,	P03-C2,	P10-B2,	P10-E1
+Plans
+	(order,	conditions	and	repeats)
+Plan
+How	it	runs
+Plan	0
+Do	1,	then	2.	If	a	suitable	room	is	free,	do	3,	then	4.	If	no	room	appears	free,	repeat	2	or	leave	the	portal	and	use	the	desk	or	a	friend.	If	1	is	not	completed,	leave	the	portal	and	use	the	desk	(P05-C2).
+Plan	1
+Do	1.1,	then	1.2.	If	sign-in	fails,	repeat	1.2	(P01-C1,	P06-C1).	Do	1.3	until	the	booking	page	is	found,	then	1.4.	If	the	page	is	not	found	after	a	few	minutes,	exit	Plan	0	(P05	stopped	after	about	four	minutes).
+Plan	2
+Do	2.1.	If	status	is	unclear	or	every	room	shows	unavailable,	do	2.2	and	2.3,	in	either	order	and	as	often	as	needed,	and	return	to	2.1	each	time.	Stop	when	a	room	is	chosen	or	the	portal	is	abandoned	(P09-B2).
+Plan	3
+Do	3.1,	then	3.2.	If	either	entry	is	wrong,	do	3.3	and	repeat	3.1	and	3.2	(P02-C2).
+Plan	4
+Do	4.1,	then	4.2,	then	4.3.	In	4.3	students	use	one	or	more	of:	screenshot,	sticky	note,	group	chat,	asking	the	desk.
+Observations	on	the	task	structure.
+	(1)	Three	steps	repeat:	sign-in	(1.2,	P01	and	P06),	refreshing	and	re-reading	availability	(2.1	and	2.2,	P04)	and	re-entering	the	date	(3.1	and	3.3,	P02).	(2)	Action	2.3	takes	the	student	out	of	the	portal
+altogether,	and	it	is	observed	for	four	participants	(P02,	P04,	P06,	P09).	(3)	Two	sub-goals	have	exits	to	the	desk:	sub-goal	1	(P05)	and	sub-goal	2	(P09).	(4)	Action	4.2	was	never	observed,	and	4.3	comes	from	retrospective	accounts	and	what
+participants	said	at	the	confirmation	screen.
+G10 MSM Technologies · CS3014 D2  |  page 9 of 13
+
+2.2	Point-of-view	statements
+The	leading	POV	carries	the	leading	opportunity	(N1).	Two	supporting	POVs	carry	the	other	needs	from	the	journey	map	so	that	every	requirement	traces	to	a	POV.	All	three	reuse	the	exact	wording	of	the	user,	need	and	insight	from	sections
+1.3	and	1.4.
+POV1	(leading).
+	Students	who	book	study	rooms	need	to	know	which	rooms	are	free	before	they	commit	to	a	booking	because	they	cannot	tell	from	the	portal	which	rooms	are	actually	free.
+POV2	(supporting).
+	Students	who	book	study	rooms	need	to	be	sure	what	they	have	chosen	and	that	the	booking	is	held	for	them	because	they	cannot	be	sure	what	the	date,	slot	and	limit	mean,	or	whether	a	booking	was	recorded,	so	they
+ask	aloud,	check	in	person	or	keep	their	own	proof.
+POV3	(supporting).
+	Students	who	book	study	rooms	need	to	know	that	room	booking	exists	and	where	it	starts	because	they	learn	the	portal	can	book	rooms	only	if	someone	tells	them,	and	they	do	not	know	where	to	look.
+POV	trace	table
+POV
+POV	part
+Exact	words	in	the	POV
+Same	words	in	the	synthesis	(where)
+POV1
+User
+students	who	book	study	rooms
+Persona	spectrum	title,	section	1.4
+POV1
+Need
+to	know	which	rooms	are	free	before	they	commit	to	a	booking
+Need	N1,	section	1.3	ladder	table,	row	T1
+POV1
+Insight
+they	cannot	tell	from	the	portal	which	rooms	are	actually	free
+Insight	I1,	section	1.3	ladder	table,	row	T1
+POV2
+User
+students	who	book	study	rooms
+Persona	spectrum	title,	section	1.4
+POV2
+Need
+to	be	sure	what	they	have	chosen	and	that	the	booking	is	held	for	them
+Need	N3,	section	1.3	ladder	table,	row	T3
+POV2
+Insight
+they	cannot	be	sure	what	the	date,	slot	and	limit	mean,	or	whether	a	booking	was	recorded,	so	they	ask
+aloud,	check	in	person	or	keep	their	own	proof
+Insight	I3,	section	1.3	ladder	table,	row	T3
+POV3
+User
+students	who	book	study	rooms
+Persona	spectrum	title,	section	1.4
+POV3
+Need
+to	know	that	room	booking	exists	and	where	it	starts
+Need	N2,	section	1.3	ladder	table,	row	T2
+POV3
+Insight
+they	learn	the	portal	can	book	rooms	only	if	someone	tells	them,	and	they	do	not	know	where	to	look
+Insight	I2,	section	1.3	ladder	table,	row	T2
+2.3	How-Might-We	questions
+HMW
+Question
+Why	not	too	broad
+Why	not	already	a	solution
+Follows	from	the	POV?
+HMW1
+How	might	we	help	students	who	book	study	rooms	know
+which	rooms	are	free	before	they	commit	to	a	booking?
+Names	one	user	group	and	one	outcome	at
+one	step	of	one	task.
+Names	no	screen,	feature	or	channel.	A	display,	a	staff-side
+change	or	a	different	booking	process	could	all	answer	it.
+Yes:	same	user	and	need	as	POV1.
+HMW2
+How	might	we	make	it	possible	for	students	who	book
+study	rooms	to	tell	which	rooms	are	actually	free	without
+asking	someone	who	can	see	the	rooms?
+Same	user	and	outcome	as	HMW1,	with	one
+condition	taken	from	the	observed	workaround
+(K1).
+The	condition	says	what	students	should	not	have	to	do,	not	how.
+No	design	is	implied.
+Yes:	same	user	as	POV1	and	the	insight	I1	("they
+cannot	tell	from	the	portal	which	rooms	are
+actually	free").
+HMW3
+How	might	we	help	students	who	book	study	rooms	be
+sure	what	they	have	chosen	and	that	the	booking	is	held
+for	them?
+One	user	group	and	one	outcome	at	the
+choosing	and	confirming	steps.
+Names	no	confirmation	message,	receipt	or	reminder.
+Yes:	same	user	and	need	as	POV2.
+HMW4
+How	might	we	help	students	who	book	study	rooms	know
+that	room	booking	exists	and	where	it	starts?
+One	user	group	and	one	outcome	at	the	first
+step	of	the	task.
+Names	no	menu,	link,	banner	or	announcement.
+Yes:	same	user	and	need	as	POV3.
+G10 MSM Technologies · CS3014 D2  |  page 10 of 13
+
+Part	3:	Requirements
+3.1	User	stories
+Each	story	is	tied	to	one	spectrum	point	from	section	1.4	and	names	the	journey	stage	it	belongs	to.	None	describes	a	feature.
+ID
+Persona	(spectrum	point)
+Story
+Journey	stage
+Evidence
+U1
+A.	Desk-and-friends	booker
+As	a	desk-and-friends	booker,	I	want	to	start	a	room	booking	myself	on	my	phone,	so
+that	I	do	not	have	to	message	or	walk	to	the	desk	to	get	a	room.
+2.	Reach	the	booking	page
+P01-B2,	P01-C2,	P05-C1,	P05-C2,	P06-C2,	P08-B1,	P08-C1,
+P09-B2
+U2
+C.	Practiced	portal	booker
+As	a	practiced	portal	booker,	I	want	to	tell	which	rooms	are	free	when	I	open	the
+booking	page,	so	that	I	do	not	have	to	keep	refreshing	it	or	ask	a	friend	or	the	desk	to
+hold	a	room.
+3.	Check	which	rooms	are	free
+P04-B1,	P04-B2,	P04-E1,	P04-E2,	P07-C2
+U3
+B.	Hesitant	portal	booker
+As	a	hesitant	portal	booker,	I	want	to	be	sure	of	the	date	and	slot	I	chose	and	that	the
+booking	is	held	for	me,	so	that	I	do	not	have	to	screenshot	it,	go	back	to	correct	it	or
+check	at	the	desk.
+4.	Enter	date	and	slot;	5.	Confirm
+and	keep	a	record
+P02-B2,	P02-C2,	P03-B1,	P03-B2,	P03-C2
+3.2	Requirement	record
+Requirements	are	outcomes	the	design	must	satisfy.	Each	has	a	type,	a	testable	criterion	in	the	form	metric,	threshold,	target	and	test	condition,	and	the	exact	evidence	it	traces	to.	Targets	are	the	team's	own	choices,	justified	below	the
+table.
+ID
+Type
+Requirement	(outcome)
+Success	criterion	(metric,	threshold,	conditions)
+Evidence	it	traces	to
+Story	/	persona
+R1
+Usability
+Students	who	have	not	booked	a
+room	on	the	portal	before	can
+reach	the	room-booking	page
+unassisted.
+Percentage	of	first-time	room	bookers	who	reach	the	booking	page	unassisted	within	2
+minutes	is	at	least	80%,	in	a	moderated	test	of	at	least	10	students	who	have	never
+booked	a	room	on	the	portal,	each	starting	from	the	portal	address	on	their	own	phone.
+Pass:	page	reached,	no	help,	within	2	minutes.	Fail:	help	given,	task	abandoned,	or	over	2
+minutes.
+P01-B2,	P01-C2,	P05-C1,	P05-C2,	P06-C2	(T2,	I2,
+N2)
+U1	/	A.	Desk-and-friends
+booker
+R2
+Usability
+Students	can	tell	which	rooms	are
+free	for	a	chosen	day	and	time
+from	the	booking	page	alone.
+Percentage	of	participants	who	correctly	identify	every	free	and	every	taken	room	and	slot
+in	each	of	three	prepared	booking	views	is	at	least	90%,	with	at	least	10	participants
+mixed	across	spectrum	points	A,	B	and	C,	no	help,	no	asking	anyone	and	at	most	30
+seconds	per	view.	Views:	all	rooms	taken,	one	room	free,	several	rooms	free.	Pass:	no
+misidentified	room	in	any	view.	Fail:	any	misidentification,	help,	or	over	30	seconds	on	any
+view.
+P04-B1,	P04-B2,	P07-C2,	P09-B1,	P09-C2,	P09-E1,
+P04-E1,	P04-E2	(T1,	I1,	N1)
+U2	/	C.	Practiced	portal
+booker
+R3
+UX
+Students	feel	sure	that	a	booking
+they	have	made	is	held	for	them.
+Mean	rating	of	at	least	4.0	on	the	statement	"I	am	sure	this	booking	is	held	for	me"	(1
+strongly	disagree	to	5	strongly	agree),	asked	straight	after	a	completed	test	booking,	from
+at	least	10	participants,	with	no	individual	rating	below	3.
+P03-B1,	P03-B2,	P03-C2,	P10-B2,	P10-C2,	P10-E1
+(T3,	I3,	N3)
+U3	/	B.	Hesitant	portal	booker
+R4
+Usability
+Students	enter	the	intended	date,
+slot	and	length	correctly	on	the
+first	attempt.
+Percentage	of	participants	who	book	a	specified	room,	date	and	two	hour	slot	correctly	on
+their	first	attempt	is	at	least	90%,	with	at	least	10	participants	on	their	own	phones	and	a
+written	task	card.	Pass:	correct	date,	start	time	and	length,	no	going	back	to	correct,	no
+help.	Fail:	any	wrong	entry,	any	correction,	or	help.
+P02-B2,	P02-C2,	P06-C3,	P08-C2,	P07-B1,	P10-B1
+(T3,	I3,	N3)
+U3	/	B.	Hesitant	portal	booker
+R5
+Accessibility
+Students	can	read	room	and	slot
+status	and	complete	the	booking
+on	a	small	phone	screen	without
+relying	on	colour	or	zooming	in.
+Inspection	walkthrough	of	stages	2	to	5	at	a	320	CSS	pixel	width	and	200%	text	size:
+100%	of	6	checkpoints	pass	in	every	specified	walkthrough	case.	(1)	No	horizontal	or	two-
+way	scrolling	(WCAG	2.2	SC	1.4.10).	(2)	The	booking	can	be	completed	with	no	pinch-
+zoom.	(3)	Date	and	slot	controls	have	a	target	of	at	least	24	by	24	CSS	pixels	(SC	2.5.8).
+(4)	Every	room	and	slot	status	can	be	identified	with	colour	removed	(SC	1.4.1).	(5)	Text
+contrast	is	at	least	4.5	to	1	(SC	1.4.3).	(6)	A	screen	reader	(TalkBack	or	NVDA)	announces
+each	status	and	the	booking	result	(SC	4.1.3).	In	addition,	0	of	5	phone	participants	pinch-
+zoom	or	mis-tap	the	date	field.
+P08-B1,	P08-C1,	P08-C2,	P09-C2	(K7,	K2).	K7	rests
+on	one	interview	participant	and	one	survey
+respondent;	no	assistive-technology	user	was	in
+either	sample	(see	3.4).
+U1	/	A.	Desk-and-friends
+booker
+Coverage	check:	usability	(R1,	R2,	R4),	UX	(R3)	and	accessibility	(R5).	Every	requirement	has	a	criterion	and	evidence	IDs.
+Survey	evidence	for	each	requirement
+	(supplementary;	the	IDs	above	are	unchanged).
+Requirement
+Survey	cards
+What	it	adds
+R1
+SV-1
+5	of	7	ticked	"Finding	the	booking	page".
+R2
+SV-5,	S05-F1
+4	of	7	saw	rooms	shown	as	unavailable	that	were	not.	One	respondent	reports	a	double	booking.
+R3
+SV-4
+5	of	7	ticked	"Unsure	whether	the	booking	was	saved".
+G10 MSM Technologies · CS3014 D2  |  page 11 of 13
+
+R3
+SV-4
+5	of	7	ticked	"Unsure	whether	the	booking	was	saved".
+R4
+SV-2,	SV-3,	S02-F2,	S06-F1,	S06-F2,	S09-F1	to	S09-F4
+4	of	7	ticked	the	date	and	6	of	7	time	or	duration.	Respondents	describe	a	slider	whose	first	click	gave	no	sign	it	registered	and	whose	second
+click	undid	the	choice	(S09-F3,	S09-F4).
+R5
+SV-6,	S06-F4,	S06-F1
+1	of	7	ticked	mobile	and	the	same	respondent	says	the	interface	"was	not	responsive".	This	matches	P08,	so	K7	now	has	two	independent
+sources,	each	a	single	voice.
+Why	these	targets.
+R1,	80%	within	2	minutes.	In	D1B	the	two	participants	who	struggled	took	about	three	minutes	(P01-C2)	and	about	four	minutes	before	giving	up	(P05-C1).	Two	minutes	is	shorter	than	either.	80%	leaves	room	for	one	miss	in	five	testers,
+because	first-time	bookers	are	the	group	most	likely	to	stall.
+R2,	90%	and	30	seconds.	P04	"cannot	see	at	a	glance"	(P04-B2).	Thirty	seconds	per	view	is	the	team's	working	definition	of	at	a	glance	for	a	three-view	set.	The	90%	matches	the	other	usability	targets,	because	a	wrong	read	leads	to	a
+wasted	trip	or	a	lost	room.
+R3,	mean	4.0	and	no	rating	below	3.	On	a	five	point	scale	4	is	agree.	A	rating	of	3	or	below	is	neutral	or	doubtful,	which	is	the	state	P03	("I	was	never	sure	it	went	through")	and	P10	("I	never	know	if	it	saved	or	not")	described.	D1	gave	no
+numeric	baseline,	so	this	threshold	is	a	target,	not	an	improvement	over	a	measured	figure.	The	survey	shows	5	of	7	unsure	whether	the	booking	was	saved	(SV-4).
+R4,	90%	first	attempt.	In	D1B	at	least	2	of	10	participants	had	a	date	problem	(P02-C2,	P08-C2),	and	in	the	survey	6	of	7	ticked	time	or	duration	(SV-3),	so	a	clean	first	attempt	is	not	the	norm	today.	90%	asks	for	a	clear	improvement
+without	demanding	perfection.
+R5,	100%	of	checkpoints.	The	checkpoints	are	binary	conformance	checks,	so	the	threshold	is	all	of	them.	Passing	them	would	show	those	six	checkpoints	are	met	and	would	not	prove	the	whole	system	is	accessible.
+3.3	Traceability	chain
+Requirement
+Story	/	persona
+POV	/	HMW
+Insight	/	need
+Theme	/	cluster
+Evidence	IDs
+R1
+U1	/	A.	Desk-and-friends	booker
+POV3	/	HMW4
+I2	/	N2
+T2	/	K3,	K4
+P01-B2,	P01-C2,	P05-C1,	P05-C2,	P06-C2,	P01-C1,	P06-C1;	survey	SV-1
+R2
+U2	/	C.	Practiced	portal	booker
+POV1	/	HMW1,	HMW2
+I1	/	N1
+T1	/	K1,	K2
+P04-B1,	P04-B2,	P07-C2,	P09-B1,	P09-C2,	P09-E1,	P04-E1,	P04-E2;	survey	SV-5,
+S05-F1
+R3
+U3	/	B.	Hesitant	portal	booker
+POV2	/	HMW3
+I3	/	N3
+T3	/	K6
+P03-B1,	P03-B2,	P03-C2,	P10-B2,	P10-C2,	P10-E1;	survey	SV-4
+R4
+U3	/	B.	Hesitant	portal	booker
+POV2	/	HMW3
+I3	/	N3
+T3	/	K5
+P02-B2,	P02-C2,	P06-C3,	P07-B1,	P10-B1,	P08-C2;	survey	SV-2,	SV-3,	S09-F1	to
+S09-F4
+R5
+U1	/	A.	Desk-and-friends	booker
+POV1	/	HMW1	for	colour	(K2);	POV3	/	HMW4
+for	phone	use	(K7,	a	single-voice	finding,
+not	a	theme)
+I1	/	N1
+T1	/	K2	(colour);	K7	(phone)
+P09-C2,	P08-B1,	P08-C1,	P08-C2;	survey	SV-6,	S06-F4
+3.4	Limits	and	gaps	in	the	evidence
+Sample.	Ten	interview	students	from	one	campus,	half	from	computing	programmes,	recruited	purposively	(D1B	3.5).	Booking	frequency	is	self-reported.	The	patterns	here	are	for	testing,	not	for	claiming	about	all	students.
+No	assistive-technology	user.	None	of	the	ten	interview	participants	or	nine	survey	respondents	described	a	screen	reader,	magnification	tool	or	other	assistive	technology,	and	D1A	did	not	screen	for	one.	R5	is	therefore	grounded	in	the
+phone	and	colour	observations	(P08,	P09,	S06)	and	in	WCAG	checkpoints,	not	in	evidence	from	disabled	users.	It	should	be	re-tested	with	such	users	in	the	evaluation	stage.
+Confirmation	never	submitted.	All	interview	participants	stopped	before	confirming,	by	D1A	design.	What	the	portal	shows	after	confirming	was	not	observed,	and	R3	rests	on	retrospective	accounts	(P03-B1,	P10-C2),	remarks	at	the
+confirmation	screen	(P03-C2)	and	the	survey	(SV-4).
+Possibly	primed	notes.	P07-B1	was	collected	after	the	facilitator	said	"portal"	(D1B	Part	4,	deviation	1).	K5	keeps	four	D1B	notes	from	three	participants	and	T3	keeps	four	participants	if	it	is	removed.
+Uncertain	notes.	P01-D2,	P05-D2	and	P10-B1	are	marked	[uncertain]	in	D1B.	None	is	the	only	support	for	a	theme.	Whether	a	room	capacity	rule	exists	is	unknown,	so	no	requirement	depends	on	it.
+Time-to-locate	is	reported	in	D1B	for	P01	and	P05	only,	so	the	baseline	for	R1	rests	on	two	participants.
+Single-voice	finding.	K7	(phone	use)	rests	on	P08	and	S06	and	is	used	only	to	shape	R5,	where	it	is	flagged.
+Counter-evidence.	Six	interview	participants	reached	the	booking	page	or	confirmation	step	without	difficulty	(cluster	X),	so	T2	and	R1	apply	to	newer	and	occasional	users,	not	all	students.
+Book	search.	T4	is	synthesised	but	no	POV	or	requirement	is	built	on	it.	It	is	kept	for	the	next	stage.
+Survey.	The	nine	survey	responses	sit	outside	the	approved	D1A	protocol	and	are	used	only	as	supplementary	corroboration.	Respondents	self-selected,	n	is	9,	ticks	are	self-reported,	and	most	denominators	are	6	or	7.	S06	contributes	8	of
+the	17	free-text	notes.	Inconsistent	answers	are	recorded	as	given	(see	section	1.1b).
+3.5	Submission	checklist
+Requirement
+Where	addressed
+Affinity	map	with	named,	evidence-traced	themes
+Sections	1.1	to	1.3
+Physical	affinity	wall	and	process	recording	(Stages	1	to	5)
+Submitted	separately	through	the	course	LMS.	Sections	1.1	and	1.1b	list	the	108	notes	for	Stage	1.	Participants	appear	only	as	P01
+to	P10	and	S01	to	S09.
+One	theme,	insight	and	need	per	strong	cluster,	each	traceable
+Section	1.3
+Persona	spectrum,	evidence-grounded,	gaps	marked
+Section	1.4	and	section	3.4
+Scenario	and	six-column	journey	map,	opportunities	phrased	as	needs
+Sections	1.5	and	1.6
+Two-level	HTA	with	plans
+Section	2.1
+G10 MSM Technologies · CS3014 D2  |  page 12 of 13
+
+POV	word-for-word	from	the	synthesis,	with	trace	table
+Section	2.2
+HMW	questions	checked	for	breadth	and	for	being	a	solution
+Section	2.3
+2	to	3	user	stories,	each	tied	to	a	persona
+Section	3.1
+3	to	5	measurable	requirements	across	usability,	UX	and	accessibility
+Section	3.2	(R1	to	R5)
+Testable	criterion	and	evidence	for	every	requirement
+Sections	3.2	and	3.3
+G10 MSM Technologies · CS3014 D2  |  page 13 of 13
