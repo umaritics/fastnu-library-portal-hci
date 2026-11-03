@@ -4,7 +4,7 @@
 > **National University of Computer & Emerging Sciences (FAST-NUCES), Islamabad**  
 > **Team G10 — MSM Technologies (Section G) | Fall 2026**
 
-[![Status](https://img.shields.io/badge/Project%20Status-Define%20Complete%20%7C%20Ideation%20%26%20Prototyping%20Next-blue.svg)](https://github.com/umaritics/fastnu-library-portal-hci)
+[![Status](https://img.shields.io/badge/Project%20Status-D3%20Complete%20%7C%20D4%20Extension%20Prototype-blue.svg)](https://github.com/umaritics/fastnu-library-portal-hci)
 [![Methodology](https://img.shields.io/badge/Methodology-Stanford%20d.school%20Design%20Thinking-orange.svg)](#project-lifecycle--methodology)
 [![Course](https://img.shields.io/badge/Course-CS3014%20Applied%20HCI-green.svg)](https://isb.nu.edu.pk/)
 [![Institution](https://img.shields.io/badge/Institution-FAST--NUCES%20Islamabad-red.svg)](https://isb.nu.edu.pk/)
@@ -20,6 +20,7 @@
 - [Phase 2 (D2): Define — Synthesis, Affinity Wall & Requirements](#-phase-2-d2-define--synthesis-affinity-wall--requirements)
 - [Upcoming Phases: D3 (Ideate), D4 (Prototype), D5 (Test)](#-upcoming-phases-the-road-to-completion)
 - [Requirements Traceability Matrix (RTM)](#-requirements-traceability-matrix-rtm)
+- [D4 Prototype (Browser Extension)](#-d4-prototype-browser-extension)
 - [Repository File Directory](#-repository-file-directory)
 - [Research Ethics & Data Anonymization](#-research-ethics--data-anonymization)
 
@@ -69,8 +70,8 @@ We follow the iterative **Stanford d.school Design Thinking** framework / **Doub
 │ Phase 0 (D0)        │ Foundations          │ ✅ Completed         │ Team Charter, Problem Space, Maps │
 │ Phase 1 (D1A & D1B) │ Empathize (Discover) │ ✅ Completed         │ 10 Think-Aloud Sessions + Survey   │
 │ Phase 2 (D2)        │ Define (Synthesize)  │ ✅ Completed         │ Affinity Wall, Personas, HTA, Req. │
-│ Phase 3 (D3)        │ Ideate (Develop)     │ 🔄 Next Up           │ Sketching, Crazy 8s, Storyboards   │
-│ Phase 4 (D4)        │ Prototype (Develop)  │ 🔄 Upcoming (Lead)   │ Low & High-Fi Interactive Figma UI │
+│ Phase 3 (D3)        │ Ideate (Develop)     │ ✅ Completed         │ Free Rooms First concept + storyboard │
+│ Phase 4 (D4)        │ Prototype (Develop)  │ 🔄 In progress (Lead)│ Browser extension on live Insignia portal │
 │ Phase 5 (D5)        │ Test (Deliver)       │ 🔄 Upcoming (Lead)   │ Moderated Testing vs. Criteria R1-5│
 └─────────────────────┴──────────────────────┴──────────────────────┴────────────────────────────────────┘
 ```
@@ -170,6 +171,56 @@ All design solutions in subsequent phases must directly satisfy the 5 measurable
 
 ---
 
+## 🧩 D4 Prototype (Browser Extension)
+
+The **D4 functional build** is a **Manifest V3 extension** that runs on the live Insignia site (`nu.insigniails.com/Library/*`). It keeps native Kendo booking behaviour and adds a **Free Rooms First** wizard on the room page plus a reskinned **Home** and header (discoverability for **R1**).
+
+### Quick start
+
+| Step | Action |
+| :--- | :--- |
+| 1 | Clone this repo and open `extension/` in Chrome/Edge → **Load unpacked** |
+| 2 | Log in at [Library Home](https://nu.insigniails.com/Library/Home) |
+| 3 | **Ctrl+F5** on Home and [Book Room](https://nu.insigniails.com/Library/Room) |
+| 4 | Confirm `<html data-g10-extension="1.0.12">` in DevTools |
+
+Full install and troubleshooting: [`extension/README.md`](extension/README.md).
+
+### What it does
+
+| Surface | Behaviour |
+| :--- | :--- |
+| **Home** | Services pane includes **Book a study room**; unified header/nav |
+| **`/Library/Room`** | 3-step wizard: **Day → Room & time → Confirm** → **pass** screen |
+| **Backend** | MAIN-world bridge drives Insignia `Room()` + grid/time strip; **real bookings** when `TEST_MODE: false` |
+| **Demo** | [`demo/`](demo/) — local mock flow without reloading the extension |
+
+### Documentation map (D4)
+
+| Document | Purpose |
+| :--- | :--- |
+| [`docs/d4/README.md`](docs/d4/README.md) | D4 submission index + checklist |
+| [`docs/d4/D4_PARTB_IMPLEMENTATION.md`](docs/d4/D4_PARTB_IMPLEMENTATION.md) | Scope, architecture, real vs test mode |
+| [`docs/prototype/NATIVE_ROOM_BOOKING_FLOW.md`](docs/prototype/NATIVE_ROOM_BOOKING_FLOW.md) | Portal DOM + book sequence |
+| [`docs/prototype/VERIFICATION_PROTOCOL.md`](docs/prototype/VERIFICATION_PROTOCOL.md) | R1–R5 and accessibility test scripts |
+
+### Repository layout (prototype code)
+
+```
+extension/
+  manifest.json
+  content/
+    config.js              # version, TEST_MODE, selectors
+    bootstrap.js           # header, home shell
+    booking-bootstrap.js   # mounts room wizard
+    shell/                 # room-booking-shell.js, CSS, portal redesign
+    bridge/                # page-world.js (Kendo), submit, date, grid, room
+    parsers/availability.js
+demo/                      # optional local UI iteration
+```
+
+---
+
 ## 🚀 Upcoming Phases: The Road to Completion
 
 This repository tracks the project as it transitions from research and definition into concrete design engineering:
@@ -189,11 +240,11 @@ This repository tracks the project as it transitions from research and definitio
   * Immediate Confirmation Modal with QR Pass and Calendar (.ics) export (solving R3).
 
 ### 2. Phase 4 (D4): Interactive Prototyping *(Lead: Muhammad Umar)*
-* **Low-Fidelity Wireframes:** Structural layout testing on mobile and desktop viewports.
-* **Mid-to-High-Fidelity Interactive Prototype:**
-  * Developed in **Figma** with comprehensive component states (default, hover, active, error, reserved).
-  * Mobile-first responsive design strictly conforming to WCAG 2.2 AA standards (320px viewport baseline, touch targets $\ge 24\times24$px).
-  * Complete click-through booking flow: Sign-in $\rightarrow$ Instant Room Matrix $\rightarrow$ Slot Selection $\rightarrow$ Review & Affirmative Confirmation.
+
+* **Primary build:** Manifest V3 **browser extension** on `nu.insigniails.com` — in-place **Free Rooms First** wizard on `/Library/Room` plus Home/header shell; bridges Insignia Kendo widgets for **live** bookings.
+* **Course artifacts:** `docs/d4/` (IA, wireflow, implementation, design system, audit templates) + [`docs/CS3014_D4_Deliverable_Brief.docx.md`](docs/CS3014_D4_Deliverable_Brief.docx.md).
+* **Specs:** [`docs/PROJECT_HANDBOOK.md`](docs/PROJECT_HANDBOOK.md), [`docs/prototype/PROTOTYPE_SPEC.md`](docs/prototype/PROTOTYPE_SPEC.md).
+* End-to-end flow: Sign-in → Home/services or `/Library/Room` → Day → timelines + duration → Confirm → **booking pass** (R3).
 
 ### 3. Phase 5 (D5): Evaluative Usability Testing *(Lead: Shahmeer Atif)*
 * **Moderated Usability Evaluation:** Lab tests with $\ge 10$ representative FAST-NU students spanning Personas A, B, and C.
@@ -210,17 +261,18 @@ This repository tracks the project as it transitions from research and definitio
 
 ```
 .
-├── .gitignore                                                               # Clean ignore rules for MS Office & OS artifacts
-├── README.md                                                                # Master project documentation & lifecycle overview
-└── docs/                                                                    # Project deliverables & research documentation
-    ├── D0_Team_Charter_Problem_Space_Stakeholder_Map.docx                  # D0: Governance charter, initial scope & stakeholder map
-    ├── G_23I-0782_MSM_Technologies.docx                                   # D0: Submission document (Muhammad Umar - 23I-0782)
-    ├── G_23I-0782_MSM_Technologies.pdf                                    # D0: Official PDF deliverable
-    ├── D1A_Research_Questions_Materials_Protocol (1).pdf                   # D1A: Ethical screener, consent script & think-aloud protocol
-    ├── G10-msmTechnologies_D1B.docx                                        # D1B: Anonymized fieldwork logs (P01-P10) & reflection
-    ├── D2_Synthesis_Report_G10.docx                                        # D2: Define stage synthesis report & requirements baseline
-    ├── D2 Synthesis Report, Problem Statement and Requirements (G10, 17-note wall).docx # D2: Rebuilt version based on 17-note physical affinity wall
-    └── i230782-MuhammadUmar-A0.md                                         # Reference report / course deliverable
+├── .gitignore
+├── README.md
+├── extension/                 # D4 MV3 prototype (load unpacked in Chrome/Edge)
+├── demo/                      # Local mock booking UI (optional dev loop)
+├── .cursor/skills/            # Project agent skills (HCI verification, extension)
+└── docs/
+    ├── PROJECT_HANDBOOK.md
+    ├── CS3014_D4_Deliverable_Brief.docx.md
+    ├── d4/                    # D4 Part A/B submission docs + checklist
+    ├── prototype/               # Spec, verification protocol, portal audit
+    ├── D0 … D3 deliverables     # PDF/DOCX (research through ideation)
+    └── …
 ```
 
 ---
