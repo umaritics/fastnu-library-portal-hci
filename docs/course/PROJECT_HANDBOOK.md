@@ -108,7 +108,7 @@ Moderated tasks from D2 scenario; metrics per R1–R5; expert pass with **Nielse
 | `docs/prototype/VERIFICATION_PROTOCOL.md` | How to verify standards (checklists, logs) |
 | `docs/prototype/IMPLEMENTATION.md` | Extension status and architecture summary |
 | `docs/prototype/CURRENT_PORTAL_AUDIT.md` | Live site technical + UX audit |
-| `docs/d4/` | D4 LMS artifacts (IA, wireflow, Part B docs, checklist) |
+| `docs/deliverables/d4/` | D4 LMS submission (Word, Part A/B, assets, video script) |
 | `.cursor/skills/*/SKILL.md` | Agent skills for build and verification |
 
 ---
@@ -118,7 +118,7 @@ Moderated tasks from D2 scenario; metrics per R1–R5; expert pass with **Nielse
 | Date | Milestone | Notes |
 | :--- | :--- | :--- |
 | 2026-10-23 | Research + specs package | Handbook, HCI reference, prototype spec, verification protocol, portal audit, Cursor skills |
-| 2026-11-03 | Extension v1.0.12 | In-place room wizard, live book + pass screen; `docs/d4/` submission pack |
+| 2026-11-03 | Extension v1.0.12 | In-place room wizard; `docs/deliverables/d4/` submission pack |
 | | R5 checkpoint walkthrough on prototype | *Pending* |
 | | D4 instructor checkpoint | *Pending* |
 

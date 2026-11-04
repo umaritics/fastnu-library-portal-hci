@@ -1,6 +1,6 @@
 # Requirements and Traceability — R1 to R5
 
-Source of truth: **D2 synthesis** (`docs/D2_MSM_Technologies_G10.pdf`). This document restates outcomes and links them to the **extension prototype** and verification methods.
+Source of truth: **D2 synthesis** (`docs/deliverables/d2/D2_MSM_Technologies_G10.pdf`). This document restates outcomes and links them to the **extension prototype** and verification methods.
 
 ---
 

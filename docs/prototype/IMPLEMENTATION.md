@@ -1,7 +1,7 @@
 # Implementation Notes — Browser Extension
 
 **Version:** 1.0.12 · **Last updated:** November 2026  
-**Location:** `extension/` · **D4 pack:** `docs/d4/D4_PARTB_IMPLEMENTATION.md`
+**Location:** `extension/` · **D4 pack:** `docs/deliverables/d4/part-b/D4_PARTB_IMPLEMENTATION.md`
 
 ## Current build (v1.0.12)
 
@@ -37,5 +37,5 @@ Early v0.1 used a shadow-DOM overlay on Room; the **submitted D4 prototype** is 
 ## Next (D5, not D4 blockers)
 
 - Formal R1–R5 moderated sessions (`docs/prototype/VERIFICATION_PROTOCOL.md`)
-- Complete Part A/B accessibility logs in `docs/d4/`
+- Complete Part A/B accessibility logs in `docs/deliverables/d4/`
 - Options page for `TEST_MODE` toggle (optional)

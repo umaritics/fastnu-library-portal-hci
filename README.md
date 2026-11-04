@@ -199,8 +199,8 @@ Full install and troubleshooting: [`extension/README.md`](extension/README.md).
 
 | Document | Purpose |
 | :--- | :--- |
-| [`docs/d4/README.md`](docs/d4/README.md) | D4 submission index + checklist |
-| [`docs/d4/D4_PARTB_IMPLEMENTATION.md`](docs/d4/D4_PARTB_IMPLEMENTATION.md) | Scope, architecture, real vs test mode |
+| [`docs/deliverables/d4/README.md`](docs/deliverables/d4/README.md) | D4 submission index + checklist |
+| [`docs/deliverables/d4/part-b/D4_PARTB_IMPLEMENTATION.md`](docs/deliverables/d4/part-b/D4_PARTB_IMPLEMENTATION.md) | Scope, architecture, real vs test mode |
 | [`docs/prototype/NATIVE_ROOM_BOOKING_FLOW.md`](docs/prototype/NATIVE_ROOM_BOOKING_FLOW.md) | Portal DOM + book sequence |
 | [`docs/prototype/VERIFICATION_PROTOCOL.md`](docs/prototype/VERIFICATION_PROTOCOL.md) | R1–R5 and accessibility test scripts |
 
@@ -242,8 +242,8 @@ This repository tracks the project as it transitions from research and definitio
 ### 2. Phase 4 (D4): Interactive Prototyping *(Lead: Muhammad Umar)*
 
 * **Primary build:** Manifest V3 **browser extension** on `nu.insigniails.com` — in-place **Free Rooms First** wizard on `/Library/Room` plus Home/header shell; bridges Insignia Kendo widgets for **live** bookings.
-* **Course artifacts:** `docs/d4/` (IA, wireflow, implementation, design system, audit templates) + [`docs/CS3014_D4_Deliverable_Brief.docx.md`](docs/CS3014_D4_Deliverable_Brief.docx.md).
-* **Specs:** [`docs/PROJECT_HANDBOOK.md`](docs/PROJECT_HANDBOOK.md), [`docs/prototype/PROTOTYPE_SPEC.md`](docs/prototype/PROTOTYPE_SPEC.md).
+* **Course artifacts:** [`docs/deliverables/d4/`](docs/deliverables/d4/) + [`docs/course/CS3014_D4_Deliverable_Brief.docx.md`](docs/course/CS3014_D4_Deliverable_Brief.docx.md).
+* **Specs:** [`docs/course/PROJECT_HANDBOOK.md`](docs/course/PROJECT_HANDBOOK.md), [`docs/prototype/PROTOTYPE_SPEC.md`](docs/prototype/PROTOTYPE_SPEC.md).
 * End-to-end flow: Sign-in → Home/services or `/Library/Room` → Day → timelines + duration → Confirm → **booking pass** (R3).
 
 ### 3. Phase 5 (D5): Evaluative Usability Testing *(Lead: Shahmeer Atif)*
@@ -267,12 +267,11 @@ This repository tracks the project as it transitions from research and definitio
 ├── demo/                      # Local mock booking UI (optional dev loop)
 ├── .cursor/skills/            # Project agent skills (HCI verification, extension)
 └── docs/
-    ├── PROJECT_HANDBOOK.md
-    ├── CS3014_D4_Deliverable_Brief.docx.md
-    ├── d4/                    # D4 Part A/B submission docs + checklist
-    ├── prototype/               # Spec, verification protocol, portal audit
-    ├── D0 … D3 deliverables     # PDF/DOCX (research through ideation)
-    └── …
+    ├── README.md                  # Docs index
+    ├── course/                    # Handbook + D4 brief
+    ├── deliverables/d2,d3,d4/     # D4: submission/, part-a/, part-b/, assets/, video/
+    ├── prototype/                 # Build specs (R1–R5, verification)
+    └── other/                     # Non-deliverable reference
 ```
 
 ---

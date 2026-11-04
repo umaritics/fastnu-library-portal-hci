@@ -28,5 +28,5 @@ Use with [`../CS3014_D4_Deliverable_Brief.docx.md`](../CS3014_D4_Deliverable_Bri
 
 ## Repo
 
-- [ ] GitHub: `extension/` + `docs/d4/` current
+- [ ] GitHub: `extension/` + `docs/deliverables/d4/` current
 - [ ] Do **not** commit `extension.zip` (gitignored)

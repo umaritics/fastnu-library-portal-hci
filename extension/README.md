@@ -1,6 +1,6 @@
 # G10 — Insignia Room Booking Extension (Prototype)
 
-Manifest V3 **in-place HCI redesign** on the live FAST-NU library portal: reskinned header/Home plus a **Free Rooms First** booking wizard on `/Library/Room`. Submissions write-up: [`../docs/d4/D4_PARTB_IMPLEMENTATION.md`](../docs/d4/D4_PARTB_IMPLEMENTATION.md).
+Manifest V3 **in-place HCI redesign** on the live FAST-NU library portal: reskinned header/Home plus a **Free Rooms First** booking wizard on `/Library/Room`. Submissions write-up: [`../docs/deliverables/d4/part-b/D4_PARTB_IMPLEMENTATION.md`](../docs/deliverables/d4/part-b/D4_PARTB_IMPLEMENTATION.md).
 
 **Version:** 1.0.12 (see `content/config.js`)
 
